@@ -116,7 +116,7 @@
 <body>
 
 <div class="progress" id="prog"></div>
-<div class="scoreboard">🏆 小組得分：<b id="score">0</b> 分</div>
+
 <div class="navbtns">
   <button class="btn ghost" onclick="go(-1)">◀ 上一部分</button>
   <button class="btn" onclick="go(1)">下一部分 ▶</button>
@@ -210,6 +210,11 @@
 <section class="slide" id="s2">
   <span class="tag">第一部分 · 0–10 分鐘</span>
   <h2>🎲 開場遊戲：這裡是歐洲，還是青島？</h2>
+  <div style="text-align:center;margin:12px 0 16px">
+    <span style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
+      🏆 小組得分：<b id="score" style="font-size:20px">0</b> 分
+    </span>
+  </div>
   <p class="lead">老師每出示一張照片，各小組討論 20 秒後舉手搶答：你覺得它在<strong>歐洲</strong>，還是在<strong>中國青島</strong>？答對 +1 分！</p>
   <div class="quiz-img-wrap"><img class="pho" id="quizImg" src="" alt="猜猜看"></div>
   <p class="feedback" id="quizFb"></p>
@@ -275,21 +280,24 @@
 <!-- s3.5 視頻過渡 -->
 <section class="slide" id="s3v">
   <h2>🎬 青島印象</h2>
-  <p style="text-align:center">先透過鏡頭，感受這座城市的兩張面孔——</p>
-  <div class="grid g2" style="margin-top:18px">
-    <div class="card">
-      <video class="pho" autoplay muted loop playsinline style="width:100%;border-radius:12px;object-fit:cover;max-height:280px">
+  <div style="max-width:1100px;margin:0 auto">
+    <div class="card" style="margin-bottom:18px">
+      <video autoplay muted loop playsinline style="width:100%;border-radius:14px;object-fit:cover;height:52vh;display:block">
         <source src="assets/vid_001.mp4" type="video/mp4">
       </video>
-      <h3>🏛️ 紅瓦綠樹，碧海藍天</h3>
-      <p>無人機鏡頭下的青島老城：紅色屋頂的德式建築與翠綠的行道樹交錯，棧橋上的回瀾閣伸入碧藍大海——這是青島最經典的畫面。</p>
+      <div style="display:flex;align-items:center;gap:18px;margin-top:14px;flex-wrap:wrap">
+        <h3 style="margin:0">🏛️ 紅瓦綠樹，碧海藍天</h3>
+        <p style="margin:0;color:#666;flex:1;min-width:280px">無人機鏡頭下的青島老城：紅色屋頂的德式建築與翠綠的行道樹交錯，棧橋上的回瀾閣伸入碧藍大海。</p>
+      </div>
     </div>
     <div class="card green">
-      <video class="pho" autoplay muted loop playsinline style="width:100%;border-radius:12px;object-fit:cover;max-height:280px">
+      <video autoplay muted loop playsinline style="width:100%;border-radius:14px;object-fit:cover;height:52vh;display:block">
         <source src="assets/vid_002.mp4" type="video/mp4">
       </video>
-      <h3>🌉 跨海長虹，大國工程</h3>
-      <p>黃昏時分的膠州灣跨海大橋：42 公里的鋼鐵長龍橫亙海面，燈火倒映水中。這座「世界第一跨海大橋」，正是中國製造的驕傲。</p>
+      <div style="display:flex;align-items:center;gap:18px;margin-top:14px;flex-wrap:wrap">
+        <h3 style="margin:0">🌉 跨海長虹，大國工程</h3>
+        <p style="margin:0;color:#666;flex:1;min-width:280px">黃昏時分的膠州灣跨海大橋：42 公里的鋼鐵長龍橫亙海面，燈火倒映水中——中國製造的驕傲。</p>
+      </div>
     </div>
   </div>
   <p style="text-align:center;margin-top:22px"><button class="btn ghost" onclick="go(4)">👉 進入「硬核中國製造」</button></p>
@@ -333,7 +341,7 @@
 <section class="slide" id="s6">
   <!-- 🎬 流浪地球互動猜謎 -->
   <div class="card" style="text-align:center; margin-bottom:20px; position:relative">
-    <img class="pho" src="assets/img_wandering_scene.jpg" style="max-height:340px; object-position:center 30%">
+    <img class="pho" src="assets/img_wandering_scene.jpg" style="max-height:55vh; object-position:center 30%">
     <h3 style="margin-top:12px">🎬 這是哪裡拍的？是什麼電影？</h3>
     <p>冰封的世界、巨大的建築、宇航員的背影——<br>你以為是美國好萊塢的大片嗎？</p>
 
