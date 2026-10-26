@@ -211,8 +211,8 @@
   <span class="tag">第一部分 · 0–10 分鐘</span>
   <h2>🎲 開場遊戲：這裡是歐洲，還是青島？</h2>
   <div style="text-align:center;margin:12px 0 16px">
-    <span style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
-      🏆 小組得分：<b id="score" style="font-size:20px">0</b> 分
+    <span class="scoreboard" style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
+      🏆 得分：<b id="score" style="font-size:20px">0</b> 分
     </span>
   </div>
   <p class="lead">老師每出示一張照片，各小組討論 20 秒後舉手搶答：你覺得它在<strong>歐洲</strong>，還是在<strong>中國青島</strong>？答對 +1 分！</p>
@@ -567,7 +567,7 @@ function go(d){show(cur+d)}
 let score=0;
 function addScore(n){score+=n;document.getElementById('score').textContent=score;
   const sb=document.querySelector('.scoreboard');
-  sb.style.transform='scale(1.12)';setTimeout(()=>sb.style.transform='',200);}
+  if(sb){sb.style.transform='scale(1.12)';setTimeout(()=>sb.style.transform='',200);}}
 document.addEventListener('keydown',e=>{
   if(e.key==='ArrowRight')go(1);
   if(e.key==='ArrowLeft')go(-1);
