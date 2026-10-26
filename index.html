@@ -328,7 +328,7 @@
   <div class="grid gbig" style="margin-top:26px">
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🚄 高鐵是青島造的？</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'中車四方股份公司')"><img src="assets/img_009.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>中車四方股份公司</h4><p class="tline">圖中這列「復興號」CR400AF 與「和諧號」CRH380A，都是中車四方的作品！</p><p class="tline">「復興號」從這裡駛向全世界——印尼雅萬高鐵的列車也是青島造。</p><p class="tline">2024 年 12 月全球最快列車 CR450 在青島亮相；未來京滬只要約 2.5 小時。</p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'中車四方股份公司')"><img src="assets/img_009.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>中車四方股份公司</h4><p class="tline">圖中這列「復興號」CR400AF 與「和諧號」CRH380A，都是中車四方的作品！</p><p class="tline">「復興號」從這裡駛向全世界——印尼雅萬高鐵的列車也是青島造。</p><p class="tline">2024 年 12 月全球最快列車 CR450 在青島亮相；未來京滬只要約 2.5 小時。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_001.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🌉 42 公里的海上長城</div>
@@ -590,6 +590,24 @@ function show(i){
   document.getElementById('prog').style.width=((cur+1)/slides.length*100)+'%';
 }
 function go(d){show(cur+d)}
+
+/* ===== 卡片配音 ===== */
+const cardAudio=new Audio();
+let cardAudioBtn=null;
+function playCardAudio(url,btn){
+  event&&event.stopPropagation();
+  if(cardAudio.src.includes(url)&&!cardAudio.paused){
+    cardAudio.pause();cardAudio.currentTime=0;
+    if(btn)btn.textContent='🔊 聽配音';
+    return;
+  }
+  cardAudio.src=url;
+  cardAudio.play().catch(()=>{});
+  if(cardAudioBtn)cardAudioBtn.textContent='🔊 聽配音';
+  cardAudioBtn=btn;
+  if(btn)btn.textContent='⏸ 暫停';
+  cardAudio.onended=function(){if(btn)btn.textContent='🔊 聽配音';};
+}
 
 /* ===== 計分 ===== */
 let score=0;
