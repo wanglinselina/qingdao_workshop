@@ -193,6 +193,13 @@
     <p style="margin:0;font-size:18px">✅ 請在手機上完成 12 題猜謎</p>
     <p style="margin:6px 0 0;font-size:15px;opacity:.9">完成後請放下手機，看投影螢幕繼續工作坊</p>
   </div>
+  <!-- 學生得分（僅學生模式可見） -->
+  <div id="studentScore" style="display:none;text-align:center;margin-top:16px">
+    <span style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
+      🏆 得分：<b id="stuScoreNum" style="font-size:20px">0</b> 分
+    </span>
+  </div>
+
 
   <p class="footer-note">玩法說明：全場分為若干小組，舉手搶答；答對由老師按「+1 分」累計得分，最後最高分組獲勝。</p>
 
@@ -548,6 +555,8 @@ if(IS_STUDENT){
     document.querySelector('.progress').style.display='none';
     const hint=document.getElementById('studentHint');
     if(hint)hint.style.display='block';
+    const stuScore=document.getElementById('studentScore');
+    if(stuScore)stuScore.style.display='block';
     document.getElementById('qrBlock').style.display='none';
     // 確保只有 S1 顯示
     document.querySelectorAll('.slide').forEach(s=>s.classList.remove('active'));
@@ -566,6 +575,8 @@ function go(d){show(cur+d)}
 /* ===== 計分 ===== */
 let score=0;
 function addScore(n){score+=n;document.getElementById('score').textContent=score;
+  const stu=document.getElementById('stuScoreNum');
+  if(stu){stu.textContent=score;}
   const sb=document.querySelector('.scoreboard');
   if(sb){sb.style.transform='scale(1.12)';setTimeout(()=>sb.style.transform='',200);}}
 document.addEventListener('keydown',e=>{
