@@ -146,6 +146,10 @@
     97.5%{opacity:0;transform:scale(1.05)}
     100%{opacity:1;transform:scale(1)}
   }
+  @keyframes shimmer{
+    0%{transform:translateX(-100%)}
+    100%{transform:translateX(100%)}
+  }
 </style>
 </head>
 <body>
@@ -284,7 +288,7 @@
   <div class="grid g3" style="margin-top:18px">
     <div><img class="pho" src="assets/img_004.jpg"><p class="cap">📍 老城漫遊——遠處山丘上的「紅蘑菇」是信號山觀景台</p></div>
     <div><img class="pho" src="assets/img_005.jpg"><p class="cap">📍 老城街角——百年紅磚塔樓與紅瓦屋頂交相輝映</p></div>
-    <div><img class="pho" src="assets/img_006.jpg"><p class="cap">📍 海濱紅瓦全景——「紅瓦綠樹、碧海藍天」的最佳詮釋</p></div>
+    <div><img class="pho" src="assets/img_030.jpg"><p class="cap">📍 老城街景——红瓦、绿树、陡坡小路，仿佛走进欧洲小镇</p></div>
   </div>
   <div class="grid g2" style="margin-top:18px">
     <div class="card">
@@ -324,11 +328,6 @@
       <img class="pho" src="assets/img_008.jpg" style="max-width:560px;margin:0 auto">
       <p class="cap">📍 五四廣場與紅色雕塑「五月的風」——為紀念五四運動而得名，是青島今日的城市新地標</p>
     </div>
-  </div>
-  <!-- 老城街景 -->
-  <div style="margin-top:18px">
-    <img class="pho" src="assets/img_030.jpg" style="object-position:center 30%;max-height:400px">
-    <p class="cap">📍 青岛老城街景——红瓦、绿树、陡坡小路，仿佛走进欧洲小镇</p>
   </div>
   <!-- 小鱼山文化名人街 -->
   <div class="card" style="margin-top:22px;border-left:6px solid var(--qd-sea)">
@@ -660,34 +659,135 @@
   </div></div>
 </section>
 
-<!-- ========== S8 終極問答 ========== -->
+<!-- ========== S8 Wooclap 終極問答 ========== -->
 <section class="slide" id="s8">
   <span class="tag">第五部分 · 55–60 分鐘</span>
   <h2>🏁 終極問答競賽</h2>
-  <p style="text-align:center;margin:14px auto 18px;padding:10px 18px;background:#f0f4f8;border-radius:10px;color:var(--qd-sea);font-size:15px;font-weight:700;display:inline-block">
-    💡 現場同學舉手搶答｜線上同學 Teams 聊天室打字｜老師專屬題請留意
-  </p>
-  <!-- 線上學生掃碼提示（僅學生模式可見） -->
-  <div id="studentHintFinal" style="display:none;text-align:center;margin:0 auto 16px;max-width:560px;padding:14px;background:linear-gradient(135deg,#f0f4f8 0%,#e8f0e8 100%);border:2px solid var(--qd-green);border-radius:12px">
+
+  <!-- 獎品橫幅 -->
+  <div style="text-align:center;margin:14px auto 22px;max-width:640px;padding:16px 24px;background:linear-gradient(135deg,#c2a878 0%,#e8d5a3 100%);border-radius:14px;box-shadow:0 4px 16px rgba(194,168,120,.35);position:relative;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#fff,transparent);animation:shimmer 2s infinite"></div>
+    <p style="margin:0;font-size:22px;font-weight:800;color:#4a3f2a;letter-spacing:1px">🎁 前 6 名答對的同學有精美禮品！</p>
+    <p style="margin:6px 0 0;font-size:14px;color:#5c4f35">準備好了嗎？Ready, Go！</p>
+  </div>
+
+  <div class="grid g2" style="max-width:900px;margin:0 auto;align-items:start">
+    <!-- 左側：QR Code 區 -->
+    <div class="card" style="text-align:center;padding:28px">
+      <h3 style="margin:0 0 14px;color:var(--qd-sea)">📱 掃碼加入 Wooclap</h3>
+      <!-- 請將下方 src 替換為你的 Wooclap QR Code 圖片 -->
+      <img id="wooclapQR" src="assets/img_001.png" style="width:220px;height:220px;object-fit:contain;border:3px dashed var(--qd-sea);border-radius:12px;padding:8px;background:#fff" alt="Wooclap QR Code">
+      <p style="margin:12px 0 6px;font-size:13px;color:#888">👆 請替換為你的 Wooclap 活動 QR Code</p>
+      <p style="margin:0;font-size:15px;color:var(--ink)">
+        或瀏覽器輸入：<br>
+        <code id="wooclapLink" style="background:#f0f4f8;padding:4px 10px;border-radius:6px;font-size:14px;color:var(--qd-sea)">wooclap.com/YOURCODE</code>
+      </p>
+      <p style="margin-top:14px;font-size:13px;color:#888;line-height:1.6">
+        💡 <b>使用方式</b>：<br>
+        1. 打開 Wooclap 後台，啟動活動<br>
+        2. 學生掃碼或輸入網址加入<br>
+        3. 老師控制題目 pace，學生手機答題<br>
+        4. 結束後 Wooclap 自動顯示排行榜
+      </p>
+    </div>
+
+    <!-- 右側：題目預覽 & 說明 -->
+    <div>
+      <div class="card" style="margin-bottom:18px">
+        <h3 style="margin:0 0 10px">📝 本輪題目預覽（共 6 題）</h3>
+        <ol style="margin:0;padding-left:20px;font-size:14px;line-height:2;color:#555">
+          <li>青島在哪一年被德國租借？</li>
+          <li>「紅瓦綠樹、碧海藍天」出自誰手？</li>
+          <li>以下哪些是青島的城市名片？（多選）</li>
+          <li>陳夢在巴黎奧運衛冕哪兩項金牌？</li>
+          <li>青島歷史事件排序題</li>
+          <li>哪部電影主要在東方影都拍攝？</li>
+        </ol>
+      </div>
+      <div class="card green" style="text-align:center;padding:18px">
+        <p style="margin:0;font-size:15px;line-height:1.8">
+          🏆 <b>計分方式</b>：Wooclap 自動計分<br>
+          ⏱ <b>限時</b>：每題 20 秒<br>
+          🎯 <b>題型</b>：單選、多選、排序<br>
+          <span style="color:var(--qd-red);font-weight:700">前 6 名可獲精美禮品！</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 線上學生提示 -->
+  <div id="studentHintFinal" style="display:none;text-align:center;margin:18px auto 0;max-width:560px;padding:14px;background:linear-gradient(135deg,#f0f4f8 0%,#e8f0e8 100%);border:2px solid var(--qd-green);border-radius:12px">
     <p style="margin:0;font-size:15px;color:#555;line-height:1.7">
-      📱 <b>線上同學</b>：請保持 Teams 開啟，終極問答環節會在聊天室進行搶答！<br>
-      🎓 <b>線上老師</b>：感謝您的參與，我們準備了專屬題目給您！
+      📱 <b>線上同學</b>：請掃描上方 QR Code 或輸入網址加入 Wooclap 答題！<br>
+      🎁 <b>注意</b>：前 6 名答對者有精美禮品！
     </p>
   </div>
 
-  <p class="lead">最後 5 分鐘快問快答！老師念題，小組舉手搶答，答對 +1 分。點擊正確答案核對：</p>
-  <div class="card" style="max-width:820px;margin:20px auto" id="qaBox">
-    <p class="timer-pill" id="qaCount">第 1 / 6 題</p>
-    <h3 id="qaQ"></h3>
-    <div id="qaOpts"></div>
-    <p class="feedback" id="qaFb"></p>
-    <p style="text-align:center"><button class="btn" id="qaNext" style="display:none" onclick="qaNext()">下一題 ▶</button></p>
-  </div>
+  <!-- 老師操作提示 -->
+  <p style="text-align:center;margin-top:18px;font-size:13px;color:#aaa">
+    👩‍🏫 <b>老師操作</b>：在 Wooclap 後台啟動活動 → 學生掃碼加入 → 逐題發布 → 結束後點「下一部分 ▶」進入頒獎典禮
+  </p>
 </section>
 
-<!-- ========== S9 結語 ========== -->
+<!-- ========== S9 頒獎典禮 + 結語 ========== -->
 <section class="slide" id="s9">
-  <span class="tag">結語</span>
+  <span class="tag">頒獎典禮 · 結語</span>
+
+  <!-- 🏆 頒獎台 -->
+  <h2>🏆 頒獎典禮</h2>
+  <p style="text-align:center;margin:0 auto 22px;font-size:16px;color:var(--qd-sea)">恭喜以下 6 位同學獲得精美禮品！</p>
+
+  <div style="max-width:800px;margin:0 auto">
+    <!-- 前三名頒獎台 -->
+    <div style="display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-bottom:28px;height:260px">
+      <!-- 第二名 -->
+      <div style="flex:1;max-width:200px;text-align:center">
+        <div class="winner-name" contenteditable="true" style="font-size:16px;font-weight:700;color:#888;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #ddd;padding:2px" data-placeholder="第2名">🥈 第2名</div>
+        <div style="height:140px;background:linear-gradient(180deg,#e8e8e8 0%,#c0c0c0 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
+          <span style="font-size:48px">🥈</span>
+        </div>
+      </div>
+      <!-- 第一名 -->
+      <div style="flex:1;max-width:220px;text-align:center;transform:scale(1.08)">
+        <div class="winner-name" contenteditable="true" style="font-size:18px;font-weight:800;color:var(--gold);margin-bottom:8px;min-height:28px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第1名">🥇 第1名</div>
+        <div style="height:180px;background:linear-gradient(180deg,#fff8e7 0%,#c2a878 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(194,168,120,.4)">
+          <span style="font-size:64px">🥇</span>
+        </div>
+      </div>
+      <!-- 第三名 -->
+      <div style="flex:1;max-width:200px;text-align:center">
+        <div class="winner-name" contenteditable="true" style="font-size:16px;font-weight:700;color:#b08d55;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第3名">🥉 第3名</div>
+        <div style="height:110px;background:linear-gradient(180deg,#f5e6d3 0%,#cd7f32 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
+          <span style="font-size:48px">🥉</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 第4-6名 -->
+    <div style="display:flex;justify-content:center;gap:16px;margin-bottom:32px">
+      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
+      </div>
+      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
+      </div>
+      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
+      </div>
+    </div>
+
+    <!-- 老師提示 -->
+    <p style="text-align:center;font-size:12px;color:#bbb;margin:0">
+      👩‍🏫 老師提示：點擊上方名字可直接編輯（投屏時按「F11」全螢幕效果更佳）
+    </p>
+  </div>
+
+  <hr style="border:none;border-top:2px dashed #ddd;margin:32px auto;max-width:600px">
+
+  <!-- 結語 -->
   <h2>🌊 這就是青島</h2>
   <div class="grid g3">
     <div class="card"><h3>🏡 紅瓦綠樹</h3><p>百年的歐陸風情，碧海藍天的浪漫老城。</p></div>
@@ -695,10 +795,10 @@
     <div class="card green"><h3>⚓ 向海圖強</h3><p>超級港口連接 700 多個世界港口，海洋科技全國領先。</p></div>
     <div class="card"><h3>🎬 東方影都</h3><p>中國電影的造夢工廠，《流浪地球》誕生地。</p></div>
     <div class="card red"><h3>🍺 啤酒之城</h3><p>一杯青啤，串起 120 年的城市記憶與世界情誼。</p></div>
-    
+    <div class="card green"><h3>🏆 冠軍之鄉</h3><p>走出張繼科、陳夢、張展碩等世界冠軍與無數明星。</p></div>
   </div>
   <p class="lead" style="margin-top:26px;text-align:center">青島，一座<strong>既有顏值、又有實力</strong>的城市。<br>歡迎大家有一天親自去青島，吹吹棧橋的風，嚐嚐原漿的啤酒！</p>
-  
+
   <!-- 感謝出席卡 -->
   <div style="max-width:700px;margin:30px auto 26px;background:#fff;border:3px solid var(--gold);border-radius:18px;padding:28px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.08)">
     <p style="font-size:28px;margin:0 0 10px">🙏</p>
@@ -710,7 +810,7 @@
     </p>
     <p style="font-size:13px;color:#999;margin-top:14px;letter-spacing:1px">— Selina 老師 · 魅力青島工作坊 —</p>
   </div>
-<div style="max-width:820px;margin:26px auto 0">
+  <div style="max-width:820px;margin:26px auto 0">
     <video class="pho" autoplay muted loop playsinline style="width:100%;border-radius:14px;box-shadow:0 4px 14px rgba(90,90,90,.14)">
       <source src="assets/vid_003.mp4" type="video/mp4">
     </video>
@@ -878,51 +978,11 @@ function nextQuiz(){
   }
 }
 
-/* ===== 終極問答 ===== */
-const qa=[
- {q:'中國高鐵「復興號」和全球最快列車 CR450，是由青島哪家企業製造的？',
-  opts:['中車四方股份公司','上海汽車集團','華為技術公司','三一重工'], ans:0,
-  why:'中車四方就坐落在青島，是中國高鐵列車的核心研製基地。'},
- {q:'膠州灣跨海大橋全長約多少公里，通車時曾是世界最長跨海大橋？',
-  opts:['約 12 公里','約 42 公里','約 100 公里','約 5 公里'], ans:1,
-  why:'全長 42.23 公里，2011 年通車時創下世界最長跨海大橋紀錄。'},
- {q:'以下哪兩個家電品牌的總部都在青島？',
-  opts:['美的、格力','海爾、海信','TCL、長虹','三星、LG'], ans:1,
-  why:'海爾與海信都是從青島走向世界的家電巨頭。'},
- {q:'《流浪地球》系列等大片的主要拍攝基地「東方影都」位於哪座城市？',
-  opts:['北京','上海','青島','深圳'], ans:2,
-  why:'東方影都位於青島西海岸新區星光島，2018 年啟用。'},
- {q:'青島啤酒創立於哪一年，是中國最早的啤酒品牌之一？',
-  opts:['1903 年','1949 年','1980 年','2001 年'], ans:0,
-  why:'1903 年由德、英商人在青島創建，至今已有 120 多年歷史。'},
- {q:'青島港的自動化碼頭創下過什麼紀錄？',
-  opts:['亞洲首個全自動化集裝箱碼頭，多次刷新裝卸效率世界紀錄','世界最大的漁港','全球第一個航空母艦碼頭','世界最深的地鐵站'], ans:0,
-  why:'青島港是亞洲首個全自動化無人碼頭，裝卸效率已 13 次刷新世界紀錄。'},
-];
-let qai=0, qaAns=false;
-function renderQA(){
-  qaAns=false;
-  document.getElementById('qaCount').textContent=`第 ${qai+1} / ${qa.length} 題`;
-  document.getElementById('qaQ').textContent=qa[qai].q;
-  document.getElementById('qaFb').textContent='';
-  document.getElementById('qaNext').style.display='none';
-  document.getElementById('qaOpts').innerHTML=qa[qai].opts.map((o,i)=>
-    `<button class="btn ghost qa-opt" onclick="qaPick(${i},this)">${'ABCD'[i]}. ${o}</button>`).join('');
-}
-function qaPick(i,btn){
-  if(qaAns)return; qaAns=true;
-  const q=qa[qai], fb=document.getElementById('qaFb');
-  if(i===q.ans){ btn.classList.add('right'); fb.textContent='✅ 正確！+1 分 — '+q.why; fb.className='feedback ok'; addScore(1);}
-  else{ btn.classList.add('wrong'); fb.textContent='❌ 正確答案是 ' + 'ABCD'[q.ans] + ' — ' + q.why; fb.className='feedback no';}
-  document.getElementById('qaNext').style.display='inline-block';
-  if(qai===qa.length-1) document.getElementById('qaNext').textContent='看結語 🏁';
-}
-function qaNext(){
-  if(qai<qa.length-1){qai++;renderQA();} else go(1);
-}
+/* ===== 終極問答（已改為 Wooclap，此處保留佔位） ===== */
+/* 題目現在在 Wooclap 平台進行，學生掃碼加入 */
+
 function restart(){
-  qi=0;qai=0;score=0;document.getElementById('score').textContent=0;
-  document.getElementById('qaNext').textContent='下一題 ▶';
+  qi=0;score=0;document.getElementById('score').textContent=0;
   // 重置猜謎區顯示
   document.getElementById('quizImg').style.display='';
   document.getElementById('quizFb').style.display='';
@@ -934,11 +994,11 @@ function restart(){
     const stuScore=document.getElementById('studentScore');
     if(stuScore)stuScore.style.display='block';
   }
-  renderQuiz();renderQA();show(0);
+  renderQuiz();show(0);
 }
 
 /* ===== init ===== */
-renderQuiz();renderQA();show(0);
+renderQuiz();show(0);
 </script>
 </body>
 </html>
