@@ -150,6 +150,13 @@
     0%{transform:translateX(-100%)}
     100%{transform:translateX(100%)}
   }
+  /* 封面高清圖片 Ken Burns 效果 */
+  .cover-hero{position:relative;width:100%;height:62vh;overflow:hidden;border-radius:16px}
+  .cover-hero img{width:100%;height:100%;object-fit:cover;display:block;animation:kenBurns 20s ease-in-out infinite alternate}
+  @keyframes kenBurns{
+    0%{transform:scale(1) translate(0,0)}
+    100%{transform:scale(1.08) translate(-1%,-1%)}
+  }
 </style>
 </head>
 <body>
@@ -164,9 +171,9 @@
 <!-- ========== S0 神秘封面 ========== -->
 <section class="slide active" id="s0">
   <div style="position:relative; width:100%; max-height:62vh; overflow:hidden; border-radius:16px; margin-bottom:20px">
-    <video autoplay muted loop playsinline style="width:100%; display:block; border-radius:16px; object-fit:cover; max-height:62vh">
-      <source src="assets/vid_cover.mp4" type="video/mp4">
-    </video>
+    <div class="cover-hero">
+      <img src="assets/img_cover_hd.jpg" alt="青島紅瓦綠樹碧海藍天">
+    </div>
     <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.35)">
       <div style="text-align:center; color:#fff; padding:20px">
         <p style="font-size:23px; letter-spacing:4px; opacity:.85; margin-bottom:12px">● INTERACTIVE WORKSHOP ●</p>
@@ -798,6 +805,52 @@
     <div class="card green"><h3>🏆 冠軍之鄉</h3><p>走出張繼科、陳夢、張展碩等世界冠軍與無數明星。</p></div>
   </div>
   <p class="lead" style="margin-top:26px;text-align:center">青島，一座<strong>既有顏值、又有實力</strong>的城市。<br>歡迎大家有一天親自去青島，吹吹棧橋的風，嚐嚐原漿的啤酒！</p>
+
+  <!-- 🗺️ 青島旅遊攻略 -->
+  <div style="max-width:900px;margin:32px auto 0">
+    <h2 style="text-align:center;margin-bottom:22px">🗺️ 青島旅遊攻略</h2>
+    <div class="grid g2">
+      <div class="card" style="border-left:5px solid var(--qd-sea)">
+        <h3 style="margin:0 0 14px">✈️ 交通安排</h3>
+        <p style="margin:0 0 12px;font-size:18px;line-height:1.9">
+          <b>飛機</b>：青島膠東國際機場（TAO），國內外航班眾多。機場距市區約 40 公里，可乘地鐵 8 號線（約 50 分鐘）或機場大巴直達市區。<br><br>
+          <b>高鐵</b>：青島站（市中心，步行可達棧橋）或青島北站（地鐵 1/3/8 號線交匯）。北京→青島約 3 小時，上海→青島約 4–5 小時。<br><br>
+          <b>市內交通</b>：地鐵已開通 8 條線路，覆蓋主要景點；公交 1–2 元；計程車起步價 10 元；共享單車遍布海濱，騎行賞景最愜意！
+        </p>
+      </div>
+      <div class="card" style="border-left:5px solid var(--qd-red)">
+        <h3 style="margin:0 0 14px">⚠️ 注意事項</h3>
+        <p style="margin:0 0 12px;font-size:18px;line-height:1.9">
+          <b>最佳季節</b>：5–10 月為宜。7–8 月可下海游泳，但遊客較多；9–10 月秋高氣爽，海鮮最肥美！<br><br>
+          <b>穿衣建議</b>：夏季清爽但海風較大，建議帶薄外套；春秋季溫差大，備一件防風外套。海邊紫外線強，防曬必備！<br><br>
+          <b>飲食提醒</b>：海鮮雖鮮美，但請選擇正規餐廳；青島啤酒度數較高（原漿約 4.7%），適量品嚐；腸胃敏感者吃海鮮時避免同時喝冰啤酒。
+        </p>
+      </div>
+    </div>
+    <div class="card green" style="margin-top:20px">
+      <h3 style="margin:0 0 14px">📅 經典三日行程推薦</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+        <div>
+          <p style="margin:0 0 8px;font-size:19px;font-weight:700;color:var(--qd-sea)">Day 1 · 老城漫步</p>
+          <p style="margin:0;font-size:17px;line-height:1.8;color:#555">棧橋 → 天主教堂 → 中山路 → 劈柴院美食 → 信號山日落俯瞰紅瓦老城</p>
+        </div>
+        <div>
+          <p style="margin:0 0 8px;font-size:19px;font-weight:700;color:var(--qd-sea)">Day 2 · 海濱風光</p>
+          <p style="margin:0;font-size:17px;line-height:1.8;color:#555">八大關散步 → 第二海水浴場 → 小魚山名人街 → 五四廣場燈光秀 → 奧帆中心夜景</p>
+        </div>
+        <div>
+          <p style="margin:0 0 8px;font-size:19px;font-weight:700;color:var(--qd-sea)">Day 3 · 深度體驗</p>
+          <p style="margin:0;font-size:17px;line-height:1.8;color:#555">嶗山道教名山一日遊 → 青島啤酒博物館 → 台東夜市掃街 → 臨別前再喝一杯原漿 🍺</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:18px;padding:16px;background:linear-gradient(135deg,#f0f4f8 0%,#e8f0e8 100%);border-radius:12px">
+      <p style="margin:0;font-size:19px;color:#555;line-height:1.7">
+        💡 <b>小貼士</b>：青島地勢起伏多坡路，建議穿舒適的步行鞋；下載「青島地鐵」App 可掃碼乘車。<br>
+        📱 推薦 App：高德地圖（導航）、美團（美食團購）、青島地鐵（乘車碼）
+      </p>
+    </div>
+  </div>
 
   <!-- 感謝出席卡 -->
   <div style="max-width:700px;margin:30px auto 26px;background:#fff;border:3px solid var(--gold);border-radius:18px;padding:28px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.08)">
