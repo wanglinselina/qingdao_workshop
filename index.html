@@ -225,7 +225,7 @@
 
   <!-- 學生模式提示（僅學生可見） -->
   <div id="studentHint" style="display:none;text-align:center;margin-top:24px;padding:16px;background:var(--qd-green);color:#fff;border-radius:12px">
-    <p style="margin:0;font-size:18px">✅ 請在手機上完成 12 題猜謎</p>
+    <p style="margin:0;font-size:18px">✅ 請在手機上完成 6 題猜謎</p>
     <p style="margin:6px 0 0;font-size:15px;opacity:.9">完成後請放下手機，看投影螢幕繼續工作坊</p>
   </div>
   <p class="footer-note">玩法說明：全場分為若干小組，舉手搶答；答對由老師按「+1 分」累計得分，最後最高分組獲勝。</p>
@@ -265,7 +265,7 @@
     <p style="font-size:36px;margin:0 0 10px">🎊</p>
     <h3 style="color:var(--qd-red);margin:0 0 8px;font-size:22px">開場猜謎完成！</h3>
     <p style="font-size:18px;color:var(--ink);margin:0 0 6px">你的總得分：</p>
-    <p style="font-size:42px;font-weight:800;color:var(--gold);margin:0 0 16px"><span id="finalScore">0</span> <span style="font-size:20px">/ 12</span></p>
+    <p style="font-size:42px;font-weight:800;color:var(--gold);margin:0 0 16px"><span id="finalScore">0</span> <span style="font-size:20px">/ 6</span></p>
     <p style="font-size:15px;color:#666;line-height:1.7;margin:0 0 18px">感謝你的參與！<br>請放下手機，抬頭看投影螢幕繼續工作坊。</p>
     <button class="btn red" onclick="show(2)">👉 進入正題</button>
   </div>
@@ -836,30 +836,18 @@ function toggleGif(wrap,key){
   else{ img.src=GIFS[key]; wrap.classList.add('gifon'); GIFON[key]=true; }
 }
 const quiz=[
- {img:'cktown', isQD:false, title:'捷克 · 克魯姆洛夫（Český Krumlov）',
-  fact:'答案是歐洲！這是捷克的童話小鎮，紅瓦屋頂環繞古堡。先暖暖身——下一張起，答案可能讓你大跌眼鏡！'},
  {img:'q_church', isQD:true, title:'🇨🇳 答案是青島！—— 浙江路天主教堂',
   fact:'這座雙塔教堂 1934 年建成，由德國人設計，高 56 米，是青島老城的天際線擔當。以為在德國？其實在青島！'},
- {img:'q_zhanqiao', isQD:true, title:'🇨🇳 還是青島！—— 棧橋',
-  fact:'棧橋建於 1892 年，是青島最早的碼頭，盡頭的「回瀾閣」是青島的城市象徵。海鷗、藍海、紅瓦——這就是青島的日常。'},
  {img:'prague', isQD:false, title:'捷克 · 布拉格',
   fact:'這張真的是布拉格！「百塔之城」的紅屋頂海洋舉世聞名——但青島的老城，也有著幾乎一樣的紅瓦風韻。'},
- {img:'q_huashilou', isQD:true, title:'🇨🇳 又是青島！—— 八大關「花石樓」',
+ {img:'q_huashilou', isQD:true, title:'🇨🇳 答案是青島！—— 八大關「花石樓」',
   fact:'花崗岩砌成的海邊古堡，面朝大海、春暖花開。歐式古堡不在歐洲，在青島八大關！'},
- {img:'q_street', isQD:true, title:'🇨🇳 依然是青島！—— 老城街景',
-  fact:'遠處山丘上的古堡是德國總督官邸（迎賓館）。紅瓦、綠樹、陡坡小路——是不是很像歐洲小鎮？這裡是青島老城。'},
  {img:'eu_roth', isQD:false, title:'德國 · 羅騰堡（Rothenburg）',
   fact:'這次真的是德國！羅騰堡是保存最完整的中世紀童話小鎮。不過說真的……木桁架房子看久了，是不是也有點像青島老城的味道？'},
  {img:'q_villa', isQD:true, title:'🇨🇳 答案是青島！—— 八大關別墅區',
   fact:'紅瓦紅磚、綠樹環繞的百年別墅，匯集 20 多國建築風格，有「萬國建築博覽會」之稱。又被騙了一次吧！'},
- {img:'eu_hall', isQD:false, title:'奧地利 · 哈爾施塔特（Hallstatt）',
-  fact:'這張是「世界最美小鎮」哈爾施塔特，湖畔小屋層層疊疊——是貨真價實的歐洲！但青島海邊的紅瓦老樓，也有異曲同工之妙。'},
- {img:'q_aofan', isQD:true, title:'🇨🇳 答案是青島！—— 奧帆中心',
-  fact:'2008 年北京奧運帆船比賽就在這裡舉行！白色「大貝殼」劇場、火炬碼頭、情人壩燈塔——「帆船之都」青島，又騙到你了吧！'},
- {img:'q_sunset', isQD:true, title:'🇨🇳 答案是青島！—— 橘子海日落',
-  fact:'以為是地中海或歐洲的海岸夕陽？這是青島夏天的「橘子海」！小魚山、石老人海水浴場都能看到這片橘紅色的大海。'},
  {img:'q_pano', isQD:true, title:'🇨🇳 最後一題，還是青島！—— 小魚山俯瞰',
-  fact:'「紅瓦綠樹、碧海藍天」——這八個字就是青島的城市名片。十二題裡有八題是青島，你一共被騙了幾次？😄'},
+  fact:'「紅瓦綠樹、碧海藍天」——這八個字就是青島的城市名片。六題裡有四題是青島，你一共被騙了幾次？😄'},
 ];
 let qi=0, answered=false;
 function renderQuiz(){
