@@ -14,44 +14,44 @@
   .slide{display:none;min-height:100vh;padding:48px 6vw 70px;position:relative;animation:fade .5s}
   .slide.active{display:block}
   @keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-  h1{font-size:clamp(28px,4.5vw,52px);line-height:1.25;margin-bottom:14px}
-  h2{font-size:clamp(22px,3vw,36px);margin-bottom:10px;color:var(--qd-red);font-weight:800}
-  h3{font-size:clamp(18px,2.2vw,24px);color:var(--qd-sea);margin:18px 0 8px}
-  p,li{font-size:clamp(15px,1.6vw,19px);line-height:1.85}
-  .tag{display:inline-block;background:var(--qd-red);color:#fff;padding:4px 16px;border-radius:999px;font-size:14px;margin-bottom:14px;letter-spacing:2px}
+  h1{font-size:clamp(32px,5vw,60px);line-height:1.25;margin-bottom:16px}
+  h2{font-size:clamp(25px,3.3vw,41px);margin-bottom:12px;color:var(--qd-red);font-weight:800}
+  h3{font-size:clamp(21px,2.5vw,28px);color:var(--qd-sea);margin:20px 0 10px}
+  p,li{font-size:clamp(17px,1.8vw,22px);line-height:1.8}
+  .tag{display:inline-block;background:var(--qd-red);color:#fff;padding:5px 18px;border-radius:999px;font-size:23px;margin-bottom:16px;letter-spacing:2px}
   .seal{color:var(--qd-sea)}
-  .lead{font-size:clamp(17px,2vw,22px);color:#445;max-width:900px}
-  .grid{display:grid;gap:18px;margin-top:20px}
+  .lead{font-size:clamp(19px,2.2vw,25px);color:#445;max-width:900px}
+  .grid{display:grid;gap:20px;margin-top:24px}
   .g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
   .g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
   .gbig{grid-template-columns:repeat(2,1fr)}
   @media(max-width:980px){.gbig{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:640px){.gbig{grid-template-columns:1fr}.flip{height:440px}}
-  .card{background:#fdfcf9;border-radius:16px;padding:18px;box-shadow:0 3px 14px rgba(90,90,90,.10);border-top:5px solid var(--qd-sea)}
+  .card{background:#fdfcf9;border-radius:16px;padding:20px;box-shadow:0 3px 14px rgba(90,90,90,.10);border-top:5px solid var(--qd-sea)}
   .card.red{border-top-color:var(--qd-red)}
   .card.green{border-top-color:var(--qd-green)}
-  .num{font-size:40px;font-weight:800;color:var(--qd-red)}
+  .num{font-size:46px;font-weight:800;color:var(--qd-red)}
   img.pho{width:100%;border-radius:14px;display:block;box-shadow:0 4px 14px rgba(90,90,90,.14)}
-  .cap{font-size:13px;color:#777;margin-top:8px;text-align:center}
-  .btn{cursor:pointer;border:none;border-radius:12px;padding:12px 26px;font-size:18px;font-weight:700;color:#fff;background:var(--qd-sea);transition:.2s;font-family:inherit}
+  .cap{font-size:19px;color:#777;margin-top:8px;text-align:center}
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 30px;font-size:23px;font-weight:700;color:#fff;background:var(--qd-sea);transition:.2s;font-family:inherit}
   .btn:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(0,0,0,.2)}
   .btn.red{background:var(--qd-red)} .btn.green{background:var(--qd-green)}
   .btn.ghost{background:#fff;color:var(--qd-sea);border:2px solid var(--qd-sea)}
-  .navbtns{position:fixed;bottom:16px;right:20px;display:flex;gap:10px;z-index:50}
-  .navbtns .btn{padding:9px 20px;font-size:15px}
+  .navbtns{position:fixed;bottom:16px;right:20px;display:flex;gap:12px;z-index:50}
+  .navbtns .btn{padding:10px 22px;font-size:19px}
   .progress{position:fixed;top:0;left:0;height:5px;background:linear-gradient(90deg,var(--qd-green),var(--qd-sea));opacity:.85;z-index:60;transition:width .4s}
-  .scoreboard{position:fixed;top:14px;right:18px;background:#5c666e;color:#fff;border-radius:14px;padding:10px 16px;z-index:55;font-size:15px;box-shadow:0 3px 10px rgba(90,90,90,.22)}
-  .scoreboard b{color:#ffd76e;font-size:20px}
+  .scoreboard{position:fixed;top:14px;right:18px;background:#5c666e;color:#fff;border-radius:14px;padding:14px 20px;z-index:55;font-size:19px;box-shadow:0 3px 10px rgba(90,90,90,.22)}
+  .scoreboard b{color:#ffd76e;font-size:23px}
   /* 猜謎 */
   .quiz-img-wrap{position:relative;max-width:820px;margin:20px auto 0;text-align:center}
   #quizImg{max-height:56vh;width:auto;max-width:100%;margin:0 auto}
-  .quiz-opts{display:flex;gap:16px;justify-content:center;margin:20px 0;flex-wrap:wrap}
-  .quiz-opts .btn{font-size:20px;padding:14px 38px}
-  .reveal{display:none;max-width:820px;margin:0 auto;background:#fff;border-radius:16px;padding:18px 22px;box-shadow:0 3px 12px rgba(90,90,90,.12);border-left:6px solid var(--gold)}
+  .quiz-opts{display:flex;gap:20px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+  .quiz-opts .btn{font-size:23px;padding:16px 42px}
+  .reveal{display:none;max-width:820px;margin:0 auto;background:#fff;border-radius:16px;padding:20px 22px;box-shadow:0 3px 12px rgba(90,90,90,.12);border-left:6px solid var(--gold)}
   .reveal h3{margin-top:0}
-  .feedback{font-size:22px;font-weight:800;min-height:32px;text-align:center}
+  .feedback{font-size:25px;font-weight:800;min-height:32px;text-align:center}
   .ok{color:var(--qd-green)} .no{color:var(--qd-red)}
-  .dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+  .dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
   .dot{width:12px;height:12px;border-radius:50%;background:#ccc}
   .dot.done{background:var(--qd-green)} .dot.cur{background:var(--qd-sea);transform:scale(1.3)}
   /* 翻牌 */
@@ -59,66 +59,66 @@
   .flip-in{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
   .flip.flipopen .flip-in{transform:rotateY(180deg)}
   .face{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center}
-  .face.front{background:var(--qd-sea);color:#fff;font-size:24px;font-weight:700;line-height:1.5}
+  .face.front{background:var(--qd-sea);color:#fff;font-size:27px;font-weight:700;line-height:1.5}
   .face.back{background:#fdfcf9;transform:rotateY(180deg);box-shadow:0 3px 12px rgba(90,90,90,.12);display:flex;flex-direction:row;padding:0;overflow:hidden}
   .face.back .backimgwrap{width:56%;flex:none;position:relative;height:100%}
   .face.back .backimgwrap img{width:100%;height:100%;object-fit:cover;display:block}
   .face.back .backimgwrap::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 62%,rgba(253,252,249,.95))}
   .face.back .backimgwrap{cursor:pointer}
-  .playbadge{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(255,255,255,.94);color:var(--qd-sea);border-radius:999px;padding:4px 13px;font-size:12.5px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.18);pointer-events:none}
+  .playbadge{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(255,255,255,.94);color:var(--qd-sea);border-radius:999px;padding:4px 13px;font-size:19px;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.18);pointer-events:none}
   .gifon .playbadge{background:rgba(139,168,136,.95);color:#fff}
-  .face.back .backtxt{flex:1;padding:18px 20px;overflow:auto;display:flex;flex-direction:column;justify-content:center}
+  .face.back .backtxt{flex:1;padding:20px 20px;overflow:auto;display:flex;flex-direction:column;justify-content:center}
   .face.back .tline{margin:8px 0;padding-left:14px;border-left:3px solid var(--gold);text-align:left}
-  .face.back h4{font-size:18.5px;color:var(--qd-sea);margin-bottom:8px;border-bottom:2px solid var(--gold);padding-bottom:7px;line-height:1.4}
-  .face.back p{font-size:15px;line-height:1.75}
-  .hint{font-size:13px;color:#999;text-align:center;margin-top:6px}
+  .face.back h4{font-size:21px;color:var(--qd-sea);margin-bottom:8px;border-bottom:2px solid var(--gold);padding-bottom:7px;line-height:1.4}
+  .face.back p{font-size:19px;line-height:1.75}
+  .hint{font-size:19px;color:#999;text-align:center;margin-top:6px}
   /* 問答 */
   .qa-opt{display:block;width:100%;text-align:left;margin:8px 0;background:#fff;color:var(--ink);border:2px solid #d8d2c4;font-weight:600}
   .qa-opt.right{background:var(--qd-green);border-color:var(--qd-green);color:#fff}
   .qa-opt.wrong{background:var(--qd-red);border-color:var(--qd-red);color:#fff}
-  .agenda li{margin:10px 0;list-style:none;background:#fff;border-radius:12px;padding:12px 18px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+  .agenda li{margin:10px 0;list-style:none;background:#fff;border-radius:12px;padding:14px 20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
   .agenda .t{display:inline-block;min-width:120px;font-weight:800;color:var(--qd-red)}
-  .bigword{font-size:clamp(30px,5vw,60px);font-weight:900;color:var(--qd-red);text-align:center;margin:26px 0 6px}
-  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;max-width:1000px;margin:20px auto}
-  .vs .lbl{text-align:center;font-weight:800;font-size:20px;color:var(--qd-sea)}
+  .bigword{font-size:clamp(34px,5.5vw,68px);font-weight:900;color:var(--qd-red);text-align:center;margin:26px 0 6px}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;max-width:1000px;margin:20px auto}
+  .vs .lbl{text-align:center;font-weight:800;font-size:23px;color:var(--qd-sea)}
   @media(max-width:640px){.vs{grid-template-columns:1fr}}
-  .timer-pill{display:inline-block;background:#8a9299;color:#fff;border-radius:999px;padding:6px 20px;font-weight:800;margin-bottom:10px}
-  .footer-note{font-size:12px;color:#999;margin-top:24px}
+  .timer-pill{display:inline-block;background:#8a9299;color:#fff;border-radius:999px;padding:6px 20px;font-weight:800;margin-bottom:12px}
+  .footer-note{font-size:23px;color:#999;margin-top:24px}
 
   /* 海報牆 */
-  .posterwall{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:20px}
+  .posterwall{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:24px}
   @media(max-width:980px){.posterwall{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:640px){.posterwall{grid-template-columns:repeat(2,1fr)}}
   .poster{cursor:pointer;position:relative;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(90,90,90,.18);transition:transform .3s,box-shadow .3s}
   .poster:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 12px 26px rgba(90,90,90,.3)}
   .poster img{width:100%;display:block}
-  .poster .ptitle{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(40,45,50,.85));color:#fff;font-size:14px;font-weight:700;padding:22px 10px 10px;text-align:center}
-  .poster .pclick{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.9);color:#555;font-size:11px;border-radius:999px;padding:3px 10px}
+  .poster .ptitle{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(40,45,50,.85));color:#fff;font-size:23px;font-weight:700;padding:22px 10px 10px;text-align:center}
+  .poster .pclick{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.9);color:#555;font-size:19px;border-radius:999px;padding:3px 10px}
   /* 燈箱 */
   .lightbox{display:none;position:fixed;inset:0;background:rgba(30,35,40,.75);z-index:100;align-items:center;justify-content:center;padding:20px}
   .lightbox.open{display:flex}
-  .lb-in{background:#fdfcf9;border-radius:18px;max-width:640px;width:100%;max-height:88vh;overflow:auto;padding:26px;position:relative;animation:fade .3s}
+  .lb-in{background:#fdfcf9;border-radius:18px;max-width:640px;width:100%;max-height:88vh;overflow:auto;padding:28px;position:relative;animation:fade .3s}
   .lb-in img{width:100%;max-width:260px;border-radius:12px;display:block;margin:0 auto 14px;box-shadow:0 4px 14px rgba(90,90,90,.25)}
   .lb-in h3{text-align:center;margin:4px 0 10px}
-  .lb-close{position:absolute;top:12px;right:14px;border:none;background:var(--qd-red);color:#fff;width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer}
-  .lb-fact{background:#f4f1e9;border-left:5px solid var(--gold);border-radius:8px;padding:12px 16px;font-size:15.5px;line-height:1.8}
+  .lb-close{position:absolute;top:12px;right:14px;border:none;background:var(--qd-red);color:#fff;width:36px;height:36px;border-radius:50%;font-size:23px;cursor:pointer}
+  .lb-fact{background:#f4f1e9;border-left:5px solid var(--gold);border-radius:8px;padding:12px 16px;font-size:23px;line-height:1.8}
 
   /* Selina老師啤酒卡 */
   .beer-card{max-width:660px;margin:26px auto 0;position:relative;background:#fdfcf9;border:3px dashed var(--gold);border-radius:22px;padding:9px;box-shadow:0 8px 24px rgba(90,90,90,.22)}
   .beer-card::before,.beer-card::after{content:'';position:absolute;width:34px;height:34px;border-radius:50%;background:var(--paper);border:3px dashed var(--gold);top:50%;transform:translateY(-50%)}
   .beer-card::before{left:-20px}.beer-card::after{right:-20px}
-  .beer-in{border:2.5px solid var(--qd-red);border-radius:16px;padding:22px 30px;text-align:center}
-  .beer-in h3{font-size:clamp(22px,3vw,30px);color:var(--qd-red);margin:0 0 2px}
-  .beer-serial{font-size:13px;letter-spacing:3px;color:#999;margin-bottom:12px}
-  .beer-foot{margin-top:12px;font-size:15px;font-weight:800;color:var(--qd-green);letter-spacing:1px}
+  .beer-in{border:2.5px solid var(--qd-red);border-radius:16px;padding:24px 34px;text-align:center}
+  .beer-in h3{font-size:clamp(25px,3.3vw,34px);color:var(--qd-red);margin:0 0 2px}
+  .beer-serial{font-size:19px;letter-spacing:3px;color:#999;margin-bottom:12px}
+  .beer-foot{margin-top:12px;font-size:19px;font-weight:800;color:var(--qd-green);letter-spacing:1px}
   /* 名人輪播 */
   .carousel{position:relative;width:100%;max-width:720px;margin:18px auto;height:420px;overflow:hidden;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.2)}
   .carousel-slide{position:absolute;inset:0;opacity:0;transition:none;transform:scale(1.05)}
   .carousel-slide img{width:100%;height:100%;object-fit:cover;display:block}
   .carousel-caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;padding:40px 20px 18px;text-align:center;z-index:2}
-  .carousel-caption .c-name{font-size:32px;font-weight:800;margin-bottom:4px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
-  .carousel-caption .c-title{font-size:18px;color:#ffd76e;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.5)}
-  @media(max-width:640px){.carousel{height:360px}.carousel-caption .c-name{font-size:26px}}
+  .carousel-caption .c-name{font-size:41px;font-weight:800;margin-bottom:4px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+  .carousel-caption .c-title{font-size:23px;color:#ffd76e;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+  @media(max-width:640px){.carousel{height:360px}.carousel-caption .c-name{font-size:29px}}
 
   /* 冠軍輪播動畫（3人 × 2秒 = 6秒週期） */
   .champ-carousel .slide-0{animation:champFade 6s infinite}
@@ -169,11 +169,11 @@
     </video>
     <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.35)">
       <div style="text-align:center; color:#fff; padding:20px">
-        <p style="font-size:14px; letter-spacing:4px; opacity:.85; margin-bottom:12px">● INTERACTIVE WORKSHOP ●</p>
-        <h1 style="font-size:clamp(36px,7vw,72px); line-height:1.1; margin-bottom:12px; text-shadow:0 4px 20px rgba(0,0,0,.5)">
+        <p style="font-size:23px; letter-spacing:4px; opacity:.85; margin-bottom:12px">● INTERACTIVE WORKSHOP ●</p>
+        <h1 style="font-size:clamp(41px,7.5vw,82px); line-height:1.1; margin-bottom:12px; text-shadow:0 4px 20px rgba(0,0,0,.5)">
           這是哪裡？
         </h1>
-        <p style="font-size:clamp(18px,2.5vw,26px); line-height:1.7; opacity:.92; text-shadow:0 2px 10px rgba(0,0,0,.4)">
+        <p style="font-size:clamp(21px,2.8vw,30px); line-height:1.7; opacity:.92; text-shadow:0 2px 10px rgba(0,0,0,.4)">
           一小時，帶你認識一座<br>不一樣的城市
         </p>
       </div>
@@ -183,24 +183,24 @@
   <div style="text-align:center">
     <div style="display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin-bottom:18px; opacity:.75">
       <div style="text-align:center">
-        <div style="font-size:28px; margin-bottom:2px">🏛️</div>
-        <p style="font-size:13px; color:#888; margin:0">紅瓦綠樹</p>
+        <div style="font-size:41px; margin-bottom:2px">🏛️</div>
+        <p style="font-size:19px; color:#888; margin:0">紅瓦綠樹</p>
       </div>
       <div style="text-align:center">
-        <div style="font-size:28px; margin-bottom:2px">🌉</div>
-        <p style="font-size:13px; color:#888; margin:0">大國工程</p>
+        <div style="font-size:41px; margin-bottom:2px">🌉</div>
+        <p style="font-size:19px; color:#888; margin:0">大國工程</p>
       </div>
       <div style="text-align:center">
-        <div style="font-size:28px; margin-bottom:2px">🎬</div>
-        <p style="font-size:13px; color:#888; margin:0">東方影都</p>
+        <div style="font-size:41px; margin-bottom:2px">🎬</div>
+        <p style="font-size:19px; color:#888; margin:0">東方影都</p>
       </div>
       <div style="text-align:center">
-        <div style="font-size:28px; margin-bottom:2px">🍺</div>
-        <p style="font-size:13px; color:#888; margin:0">百年啤酒</p>
+        <div style="font-size:41px; margin-bottom:2px">🍺</div>
+        <p style="font-size:19px; color:#888; margin:0">百年啤酒</p>
       </div>
     </div>
-    <p style="font-size:14px; color:var(--qd-green); font-weight:700; margin-bottom:16px">🎓 Selina 老師 · 互動工作坊 · 約 60 分鐘</p>
-    <button class="btn red" onclick="go(1)" style="font-size:20px; padding:14px 48px">進入工作坊 🚀</button>
+    <p style="font-size:23px; color:var(--qd-green); font-weight:700; margin-bottom:16px">🎓 Selina 老師 · 互動工作坊 · 約 60 分鐘</p>
+    <button class="btn red" onclick="go(1)" style="font-size:23px; padding:14px 48px">進入工作坊 🚀</button>
   </div>
 </section>
 
@@ -217,20 +217,20 @@
     <li><span class="t">40–50 分鐘</span> 🎬 東方影都：中國電影的造夢工廠</li>
     <li><span class="t">50–60 分鐘</span> 🍺 青島啤酒 + 終極問答競賽</li>
   </ul>
-  <p style="margin-top:22px"><button class="btn red" onclick="go(1)">開始！🚀</button></p>
+  <p style="margin-top:24px"><button class="btn red" onclick="go(1)">開始！🚀</button></p>
   <!-- 學生掃碼入場區（老師版可見，學生版隱藏） -->
   <div id="qrBlock" style="max-width:420px;margin:28px auto 0;text-align:center;background:#fff;border:3px dashed var(--gold);border-radius:18px;padding:22px;">
     <h3 style="margin:0 0 8px;color:var(--qd-red)">📱 學生掃碼答題</h3>
-    <p style="font-size:15px;color:#777;margin-bottom:12px">請學生拿出手機，掃描下方 QR Code<br>即可進入「青島猜猜看」答題頁面</p>
+    <p style="font-size:19px;color:#777;margin-bottom:12px">請學生拿出手機，掃描下方 QR Code<br>即可進入「青島猜猜看」答題頁面</p>
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeAQAAAAB6HIMaAAAB20lEQVR4nO2YPY4bMQyFP5kDpNQAOUCOQt/MV6OP4gME4JQGZLwU0uw22d0qCItVMRiAzQfq6fGniQ/P6/JxDL6DXwVRAli6FEqnx+gz3z4q0rokSyyRwhSjyyRlQdoNaDhdEK+f+dyTx5Vjt98FlXAGj9Z2fuTdkvYrCgB9Guwx4Nlur/2ux7UA0N/P0q0ESAFu6VV1e4F7a43jaunbcbMEeLXW9pK5nSedLiXLECRJ9XLL9Fh6LB9bDhajpt9OiXbRJQnmf1hF3SJpAIs2LH3AgKK5TUbX6DFv39LBpzBq0s6UmjR60GXJmDmvSOvAammAHkroQa9JO5sZcfZjWpWiJK3EfFM4uJIB9LCatDmBfRYFgB6WFKVVmELpY1pBMnBLSvYJKFFiCfjAlT7/S76yC/iGP3cAy/sGTBP+f0CfHCkA8LHkGgNfRa0gbbot0a66QD+VXJD2HCHH6b0DTFF05n27es2mcRpv2a7GTTFHBuB9mVCTds0OSwN0DXyWjHq0F47WWtvwjaXeDTb8tZd0sLWr8ffRDFdS9JWlg5tWNz4XC1Vr2UmbrFZcomv0mn77FnR73IBxNHtcN6BHXd1K49wnAOAlc/u2v13ftU+YY1o52va9yf9nwT8CBrSMdmvbFQAAAABJRU5ErkJggg==" style="width:200px;height:200px;display:block;margin:0 auto;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15)">
-    <p style="font-size:12px;color:#999;margin-top:10px;word-break:break-all">https://wanglinselina.github.io/qingdao_workshop/?mode=student</p>
-    <p style="font-size:13px;color:var(--qd-red);margin-top:8px;background:#fff3f0;padding:6px 10px;border-radius:6px;display:inline-block"><b>⚠️ 部署後請修改為你的實際網址</b></p>
+    <p style="font-size:23px;color:#999;margin-top:10px;word-break:break-all">https://wanglinselina.github.io/qingdao_workshop/?mode=student</p>
+    <p style="font-size:19px;color:var(--qd-red);margin-top:8px;background:#fff3f0;padding:6px 10px;border-radius:6px;display:inline-block"><b>⚠️ 部署後請修改為你的實際網址</b></p>
   </div>
 
   <!-- 學生模式提示（僅學生可見） -->
   <div id="studentHint" style="display:none;text-align:center;margin-top:24px;padding:16px;background:var(--qd-green);color:#fff;border-radius:12px">
-    <p style="margin:0;font-size:18px">✅ 請在手機上完成 6 題猜謎</p>
-    <p style="margin:6px 0 0;font-size:15px;opacity:.9">完成後請放下手機，看投影螢幕繼續工作坊</p>
+    <p style="margin:0;font-size:23px">✅ 請在手機上完成 6 題猜謎</p>
+    <p style="margin:6px 0 0;font-size:19px;opacity:.9">完成後請放下手機，看投影螢幕繼續工作坊</p>
   </div>
   <p class="footer-note">玩法說明：全場分為若干小組，舉手搶答；答對由老師按「+1 分」累計得分，最後最高分組獲勝。</p>
 
@@ -241,8 +241,8 @@
   <span class="tag">第一部分 · 0–10 分鐘</span>
   <h2>🎲 開場遊戲：這裡是歐洲，還是青島？</h2>
   <div style="text-align:center;margin:12px 0 16px">
-    <span class="scoreboard" style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
-      🏆 得分：<b id="score" style="font-size:20px">0</b> 分
+    <span class="scoreboard" style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:23px;font-weight:700">
+      🏆 得分：<b id="score" style="font-size:23px">0</b> 分
     </span>
   </div>
   <p class="lead">老師每出示一張照片，各小組討論 20 秒後舉手搶答：你覺得它在<strong>歐洲</strong>，還是在<strong>中國青島</strong>？答對 +1 分！</p>
@@ -255,22 +255,22 @@
   <div class="reveal" id="quizReveal">
     <h3 id="quizTitle"></h3>
     <p id="quizFact"></p>
-    <p style="text-align:center;margin-top:14px"><button class="btn" onclick="nextQuiz()">下一張 ▶</button></p>
+    <p style="text-align:center;margin-top:16px"><button class="btn" onclick="nextQuiz()">下一張 ▶</button></p>
   </div>
   <div class="dots" id="quizDots"></div>
   <!-- 學生模式得分（僅學生模式可見，位於底部） -->
-  <div id="studentScore" style="display:none;text-align:center;margin-top:18px">
-    <span style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:16px;font-weight:700">
-      🏆 得分：<b id="stuScoreNum" style="font-size:20px">0</b> 分
+  <div id="studentScore" style="display:none;text-align:center;margin-top:24px">
+    <span style="display:inline-block;background:var(--gold);color:#fff;padding:8px 22px;border-radius:999px;font-size:23px;font-weight:700">
+      🏆 得分：<b id="stuScoreNum" style="font-size:23px">0</b> 分
     </span>
   </div>
   <!-- 答題完成畫面 -->
-  <div id="quizComplete" style="display:none;text-align:center;margin-top:20px;padding:28px;background:#fff;border:3px solid var(--gold);border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.08)">
-    <p style="font-size:36px;margin:0 0 10px">🎊</p>
-    <h3 style="color:var(--qd-red);margin:0 0 8px;font-size:22px">開場猜謎完成！</h3>
-    <p style="font-size:18px;color:var(--ink);margin:0 0 6px">你的總得分：</p>
-    <p style="font-size:42px;font-weight:800;color:var(--gold);margin:0 0 16px"><span id="finalScore">0</span> <span style="font-size:20px">/ 6</span></p>
-    <p style="font-size:15px;color:#666;line-height:1.7;margin:0 0 18px">感謝你的參與！<br>請放下手機，抬頭看投影螢幕繼續工作坊。</p>
+  <div id="quizComplete" style="display:none;text-align:center;margin-top:24px;padding:28px;background:#fff;border:3px solid var(--gold);border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.08)">
+    <p style="font-size:41px;margin:0 0 10px">🎊</p>
+    <h3 style="color:var(--qd-red);margin:0 0 8px;font-size:25px">開場猜謎完成！</h3>
+    <p style="font-size:23px;color:var(--ink);margin:0 0 6px">你的總得分：</p>
+    <p style="font-size:55px;font-weight:800;color:var(--gold);margin:0 0 16px"><span id="finalScore">0</span> <span style="font-size:23px">/ 6</span></p>
+    <p style="font-size:19px;color:#666;line-height:1.7;margin:0 0 18px">感謝你的參與！<br>請放下手機，抬頭看投影螢幕繼續工作坊。</p>
     <button class="btn red" onclick="show(2)">👉 進入正題</button>
   </div>
 </section>
@@ -285,12 +285,12 @@
     <div><img class="pho" src="assets/img_002.jpg"><p class="cap">📍 八大關 — 匯集 20 多國建築風格的別墅區</p></div>
     <div><img class="pho" src="assets/img_003.jpg"><p class="cap">📍 花石樓 — 面朝大海的花崗岩古堡</p></div>
   </div>
-  <div class="grid g3" style="margin-top:18px">
+  <div class="grid g3" style="margin-top:24px">
     <div><img class="pho" src="assets/img_004.jpg"><p class="cap">📍 老城漫遊——遠處山丘上的「紅蘑菇」是信號山觀景台</p></div>
     <div><img class="pho" src="assets/img_005.jpg"><p class="cap">📍 老城街角——百年紅磚塔樓與紅瓦屋頂交相輝映</p></div>
     <div><img class="pho" src="assets/img_030.jpg"><p class="cap">📍 老城街景——红瓦、绿树、陡坡小路，仿佛走进欧洲小镇</p></div>
   </div>
-  <div class="grid g2" style="margin-top:18px">
+  <div class="grid g2" style="margin-top:24px">
     <div class="card">
       <h3>❓ 為什麼青島有這麼多德式建築？</h3>
       <p>1897 年，德國租借青島，把這裡當作「遠東模範城市」來建設：修港口、鋪鐵路、建市政設施，也留下教堂、官邸、別墅等大量德式建築。1914 年後日本曾接管，1922 年青島回歸中國。百年的歷史層疊，造就了今天獨特的歐陸風情。</p>
@@ -305,21 +305,21 @@
       </ul>
     </div>
     <div class="card" style="text-align:center;border-left:6px solid var(--qd-red)">
-      <p style="font-size:24px;margin:0 0 6px">💬</p>
-      <p style="font-size:clamp(16px,1.8vw,20px);font-weight:800;color:var(--qd-red);margin:0 0 8px;line-height:1.4">「紅瓦綠樹、碧海藍天」</p>
-      <p style="font-size:14px;color:#555;margin:0 0 10px;line-height:1.75">
+      <p style="font-size:27px;margin:0 0 6px">💬</p>
+      <p style="font-size:clamp(18px,2vw,23px);font-weight:800;color:var(--qd-red);margin:0 0 8px;line-height:1.4">「紅瓦綠樹、碧海藍天」</p>
+      <p style="font-size:23px;color:#555;margin:0 0 10px;line-height:1.75">
         這八個字出自近代著名學者、維新變法領袖——<b>康有為</b>。<br>
         1923 年遊覽青島後寫下這句詩，驚嘆於這座城市紅色屋頂錯落於翠綠樹影之中、碧海與藍天連成一線的獨特風貌。<br>
         百年來，這句話從個人遊記變成全城共識，更被寫入城市規劃——<b style="color:var(--qd-sea)">新建築必須用紅瓦，街道必須種綠樹，海岸線必須留給市民。</b>
       </p>
-      <p style="font-size:11px;color:#aaa;margin:0">— 康有為《青島遊記》，1923 年</p>
+      <p style="font-size:19px;color:#aaa;margin:0">— 康有為《青島遊記》，1923 年</p>
     </div>
-    <div style="text-align:center;margin-top:14px">
+    <div style="text-align:center;margin-top:16px">
       <img class="pho" src="assets/img_007.jpg" style="max-width:520px;margin:0 auto;border:3px solid #fff">
       <p class="cap">🗺️ 青島在中國的位置——山東半島東南岸，與韓國、日本隔海相望</p>
     </div>
   </div>
-  <div class="grid g2" style="margin-top:18px">
+  <div class="grid g2" style="margin-top:24px">
     <div class="card red">
       <h3>✊ 一場改變中國的運動，從青島開始</h3>
       <p>1919 年，一戰結束後，列強要把德國在山東的權益轉讓給日本。北京學生憤而走上街頭，喊出「<b>外爭主權，內除國賊</b>」「<b>還我青島</b>」——轟轟烈烈的<b>五四運動</b>由此爆發，成為中國現代史的重要轉折。1922 年，中國正式收回青島。</p>
@@ -330,28 +330,28 @@
     </div>
   </div>
   <!-- 小鱼山文化名人街 -->
-  <div class="card" style="margin-top:22px;border-left:6px solid var(--qd-sea)">
+  <div class="card" style="margin-top:24px;border-left:6px solid var(--qd-sea)">
     <h3>📚 小鱼山文化名人街——课本里的人物住在这里</h3>
     <p>上世纪 30 年代，国立山东大学在青岛成立，一大批文化巨匠云集于此，让青岛成为与北京、上海齐名的中国文化中心之一。如今小鱼山周边仍保存着 60 多处名人故居，一砖一瓦都是故事。</p>
-    <div class="grid g2" style="margin-top:14px">
+    <div class="grid g2" style="margin-top:16px">
       <div><img class="pho" src="assets/img_037.jpg" style="object-position:center"><p class="cap">📍 老舍故居（黄县路 12 号）——老舍在此写下《骆驼祥子》，现为骆驼祥子博物馆</p></div>
       <div><img class="pho" src="assets/img_043.jpg" style="object-position:center"><p class="cap">📍 闻一多故居「一多楼」（鱼山路 5 号）——闻一多在此写下诗作《奇迹》</p></div>
     </div>
-    <div class="grid g2" style="margin-top:14px">
+    <div class="grid g2" style="margin-top:16px">
       <div><img class="pho" src="assets/img_044.jpg" style="object-position:center"><p class="cap">📍 康有为故居（福山支路 5 号）——晚年定居青岛，「红瓦绿树、碧海蓝天」命名者</p></div>
       <div><img class="pho" src="assets/img_006.jpg" style="object-position:center"><p class="cap">📍 小鱼山俯瞰——60 多处名人故居散落其间，一砖一瓦都是故事</p></div>
     </div>
-    <div class="grid g2" style="margin-top:14px">
+    <div class="grid g2" style="margin-top:16px">
       <div class="card" style="border:none;box-shadow:none;padding:12px">
-        <p style="margin:0;font-size:14px;line-height:1.8"><b>🏠 老舍</b>：在青岛创作了 40 多部作品，包括《骆驼祥子》。他说青岛是他最想重游的地方。<br><b>🏠 闻一多</b>：时任文学院长，在青写下名噪诗坛的《奇迹》。<br><b>🏠 梁实秋</b>：外文系主任，在此开始翻译《莎士比亚全集》。</p>
+        <p style="margin:0;font-size:23px;line-height:1.8"><b>🏠 老舍</b>：在青岛创作了 40 多部作品，包括《骆驼祥子》。他说青岛是他最想重游的地方。<br><b>🏠 闻一多</b>：时任文学院长，在青写下名噪诗坛的《奇迹》。<br><b>🏠 梁实秋</b>：外文系主任，在此开始翻译《莎士比亚全集》。</p>
       </div>
       <div class="card" style="border:none;box-shadow:none;padding:12px">
-        <p style="margin:0;font-size:14px;line-height:1.8"><b>🏠 沈从文</b>：1931–1933 年在此任教，《边城》的最初构思便诞生于青岛。<br><b>🏠 康有为</b>：晚年定居青岛，"红瓦绿树、碧海蓝天"的命名者。<br><b>🏠 萧红 & 萧军</b>：在此完成《生死场》《八月的乡村》。</p>
+        <p style="margin:0;font-size:23px;line-height:1.8"><b>🏠 沈从文</b>：1931–1933 年在此任教，《边城》的最初构思便诞生于青岛。<br><b>🏠 康有为</b>：晚年定居青岛，"红瓦绿树、碧海蓝天"的命名者。<br><b>🏠 萧红 & 萧军</b>：在此完成《生死场》《八月的乡村》。</p>
       </div>
     </div>
     <p style="text-align:center;margin-top:10px"><em>走进这些故居，课本里的人物、故事，都活了。</em></p>
   </div>
-  <p style="margin-top:18px"><em>但是——青島真的只有美景和歷史嗎？往下看，你可能會大吃一驚！</em> 👇</p>
+  <p style="margin-top:24px"><em>但是——青島真的只有美景和歷史嗎？往下看，你可能會大吃一驚！</em> 👇</p>
 </section>
 
 <!-- s3.5 視頻過渡 -->
@@ -362,7 +362,7 @@
       <video autoplay muted loop playsinline style="width:100%;border-radius:14px;object-fit:cover;height:52vh;display:block">
         <source src="assets/vid_001.mp4" type="video/mp4">
       </video>
-      <div style="display:flex;align-items:center;gap:18px;margin-top:14px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:20px;margin-top:16px;flex-wrap:wrap">
         <h3 style="margin:0">🏛️ 紅瓦綠樹，碧海藍天</h3>
         <p style="margin:0;color:#666;flex:1;min-width:280px">無人機鏡頭下的青島老城：紅色屋頂的德式建築與翠綠的行道樹交錯，棧橋上的回瀾閣伸入碧藍大海。</p>
       </div>
@@ -371,13 +371,13 @@
       <video autoplay muted loop playsinline style="width:100%;border-radius:14px;object-fit:cover;height:52vh;display:block">
         <source src="assets/vid_002.mp4" type="video/mp4">
       </video>
-      <div style="display:flex;align-items:center;gap:18px;margin-top:14px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:20px;margin-top:16px;flex-wrap:wrap">
         <h3 style="margin:0">🌉 跨海長虹，大國工程</h3>
         <p style="margin:0;color:#666;flex:1;min-width:280px">黃昏時分的膠州灣跨海大橋：42 公里的鋼鐵長龍橫亙海面，燈火倒映水中——中國製造的驕傲。</p>
       </div>
     </div>
   </div>
-  <p style="text-align:center;margin-top:22px"><button class="btn ghost" onclick="go(4)">👉 進入「硬核中國製造」</button></p>
+  <p style="text-align:center;margin-top:24px"><button class="btn ghost" onclick="go(4)">👉 進入「硬核中國製造」</button></p>
 </section>
 
 <!-- ========== S4 硬核青島 ========== -->
@@ -389,27 +389,27 @@
   <div class="grid gbig" style="margin-top:26px">
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🚄 高鐵是青島造的？</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'中車四方股份公司')"><img src="assets/img_009.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>中車四方股份公司</h4><p class="tline">圖中這列「復興號」CR400AF 與「和諧號」CRH380A，都是中車四方的作品！</p><p class="tline">「復興號」從這裡駛向全世界——印尼雅萬高鐵的列車也是青島造。</p><p class="tline">2024 年 12 月全球最快列車 CR450 在青島亮相；未來京滬只要約 2.5 小時。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_001.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'中車四方股份公司')"><img src="assets/img_009.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>中車四方股份公司</h4><p class="tline">圖中這列「復興號」CR400AF 與「和諧號」CRH380A，都是中車四方的作品！</p><p class="tline">「復興號」從這裡駛向全世界——印尼雅萬高鐵的列車也是青島造。</p><p class="tline">2024 年 12 月全球最快列車 CR450 在青島亮相；未來京滬只要約 2.5 小時。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_001.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🌉 42 公里的海上長城</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'膠州灣跨海大橋')"><img src="assets/img_010.jpg" style="object-position:center 55%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>膠州灣跨海大橋</h4><p class="tline">全長 42.23 公里，2011 年通車時是世界最長跨海大橋。</p><p class="tline">造價約 100 億元人民幣，5000 多個橋墩深入海底，抗風抗震。</p><p class="tline">東西兩岸車程：從繞灣 1 小時 → 跨海 20 多分鐘。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_002.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'膠州灣跨海大橋')"><img src="assets/img_010.jpg" style="object-position:center 55%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>膠州灣跨海大橋</h4><p class="tline">全長 42.23 公里，2011 年通車時是世界最長跨海大橋。</p><p class="tline">造價約 100 億元人民幣，5000 多個橋墩深入海底，抗風抗震。</p><p class="tline">東西兩岸車程：從繞灣 1 小時 → 跨海 20 多分鐘。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_002.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">⚓ 全球頂尖港口</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'全球頂尖大港')"><img src="assets/img_011.jpg" style="object-position:center 45%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>全球頂尖大港</h4><p class="tline">貨物吞吐量超 7 億噸（全球第 4）、集裝箱超 3000 萬標箱（全球第 5）。</p><p class="tline">航線近 240 條，連接全球 700 多個港口。</p><p class="tline">亞洲首個全自動化無人碼頭，裝卸效率 13 次刷新世界紀錄。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_003.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'全球頂尖大港')"><img src="assets/img_011.jpg" style="object-position:center 45%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>全球頂尖大港</h4><p class="tline">貨物吞吐量超 7 億噸（全球第 4）、集裝箱超 3000 萬標箱（全球第 5）。</p><p class="tline">航線近 240 條，連接全球 700 多個港口。</p><p class="tline">亞洲首個全自動化無人碼頭，裝卸效率 13 次刷新世界紀錄。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_003.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">📺 你家裡的海爾、海信</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'海爾、海信雙巨頭')"><img src="assets/img_012.jpg" style="object-position:center center"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>海爾、海信雙巨頭</h4><p class="tline">海爾：大型家電零售量連續 16 年全球第一（歐睿國際），冰箱、洗衣機銷量世界第一。</p><p class="tline">海信：電視出貨量全球第二，100 吋超大屏出貨量世界第一，2024 歐洲盃官方指定電視。</p><p class="tline">兩家巨頭總部都在青島——「青島製造」就在你家客廳！</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_004.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'海爾、海信雙巨頭')"><img src="assets/img_012.jpg" style="object-position:center center"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>海爾、海信雙巨頭</h4><p class="tline">海爾：大型家電零售量連續 16 年全球第一（歐睿國際），冰箱、洗衣機銷量世界第一。</p><p class="tline">海信：電視出貨量全球第二，100 吋超大屏出貨量世界第一，2024 歐洲盃官方指定電視。</p><p class="tline">兩家巨頭總部都在青島——「青島製造」就在你家客廳！</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_004.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🧪 海洋科技城</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'海洋科技第一城')"><img src="assets/img_013.jpg" style="object-position:center 35%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>海洋科技第一城</h4><p class="tline">海洋生產總值全國海洋城市前三，坐擁全國唯一的海洋試點國家實驗室。</p><p class="tline">中國海洋大學、中科院海洋研究所、「科學號」「深海一號」都扎根於此。</p><p class="tline">「蛟龍號」下潛 7062 米，創世界作業型深潛器最深紀錄，覆蓋全球 99.8% 海域。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_005.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'海洋科技第一城')"><img src="assets/img_013.jpg" style="object-position:center 35%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>海洋科技第一城</h4><p class="tline">海洋生產總值全國海洋城市前三，坐擁全國唯一的海洋試點國家實驗室。</p><p class="tline">中國海洋大學、中科院海洋研究所、「科學號」「深海一號」都扎根於此。</p><p class="tline">「蛟龍號」下潛 7062 米，創世界作業型深潛器最深紀錄，覆蓋全球 99.8% 海域。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_005.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
     <div><div class="flip" onclick="this.classList.toggle('flipopen')"><div class="flip-in">
       <div class="face front">🚢 大國重器下水地</div>
-      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'大國重器下水地')"><img src="assets/img_014.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>大國重器下水地</h4><p class="tline">國家級船舶與海工裝備出口基地，北海造船等骨幹船廠坐落於此。</p><p class="tline">超大型油輪（VLCC）、大型集裝箱船、海上鑽井平台（FPSO）從這裡下水。</p><p class="tline">產業規模位居中國前列——名副其實的「大國重器下水地」。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_006.mp3',this)">🔊 聽配音</button></p></div></div>
+      <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'大國重器下水地')"><img src="assets/img_014.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>大國重器下水地</h4><p class="tline">國家級船舶與海工裝備出口基地，北海造船等骨幹船廠坐落於此。</p><p class="tline">超大型油輪（VLCC）、大型集裝箱船、海上鑽井平台（FPSO）從這裡下水。</p><p class="tline">產業規模位居中國前列——名副其實的「大國重器下水地」。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:23px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_006.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
   </div>
 </section>
@@ -444,24 +444,24 @@
     </div>
   </div>
 
-  <div class="grid g3" style="margin-top:22px">
+  <div class="grid g3" style="margin-top:24px">
     <div class="card red" style="text-align:center">
       <p class="num">🏊</p>
       <h3 style="margin-top:0">张展硕</h3>
-      <p style="font-size:14px">16 岁夺世锦赛双金，18 岁全运会四冠王，中国男子游泳史上最年轻的世界冠军。</p>
+      <p style="font-size:23px">16 岁夺世锦赛双金，18 岁全运会四冠王，中国男子游泳史上最年轻的世界冠军。</p>
     </div>
     <div class="card red" style="text-align:center">
       <p class="num">🏓</p>
       <h3 style="margin-top:0">陈梦</h3>
-      <p style="font-size:14px">东京奥运会女单、女团双金得主，国际乒联总决赛四连冠，世界排名第一。</p>
+      <p style="font-size:23px">东京奥运会女单、女团双金得主，国际乒联总决赛四连冠，世界排名第一。</p>
     </div>
     <div class="card red" style="text-align:center">
       <p class="num">🏓</p>
       <h3 style="margin-top:0">张继科</h3>
-      <p style="font-size:14px">史上最快大满贯（445天），伦敦奥运会男单、男团双金，青岛走出的「藏獒」。</p>
+      <p style="font-size:23px">史上最快大满贯（445天），伦敦奥运会男单、男团双金，青岛走出的「藏獒」。</p>
     </div>
   </div>
-  <p style="text-align:center;margin-top:22px"><button class="btn ghost" onclick="go(1)">👉 不只冠军，还有明星</button></p>
+  <p style="text-align:center;margin-top:24px"><button class="btn ghost" onclick="go(1)">👉 不只冠军，还有明星</button></p>
 </section>
 
 <!-- ========== S5b 青島還生產明星 ========== -->
@@ -515,8 +515,8 @@
     </div>
   </div>
 
-  <p style="text-align:center;margin-top:22px;font-size:clamp(18px,2.5vw,26px);color:var(--qd-red);font-weight:800">✨ 夢開始的地方，青島 ✨</p>
-  <p style="text-align:center;margin-top:18px"><button class="btn ghost" onclick="go(1)">👉 走進東方影都</button></p>
+  <p style="text-align:center;margin-top:24px;font-size:clamp(21px,2.8vw,30px);color:var(--qd-red);font-weight:800">✨ 夢開始的地方，青島 ✨</p>
+  <p style="text-align:center;margin-top:24px"><button class="btn ghost" onclick="go(1)">👉 走進東方影都</button></p>
 </section>
 
 <!-- ========== S6 東方影都 ========== -->
@@ -527,16 +527,16 @@
     <h3 style="margin-top:12px">🎬 這是哪裡拍的？是什麼電影？</h3>
     <p>冰封的世界、巨大的建築、宇航員的背影——<br>你以為是美國好萊塢的大片嗎？</p>
 
-    <p class="tline" style="cursor:pointer;color:var(--qd-sea);font-weight:700; font-size:17px; margin-top:14px" onclick="this.style.display='none';document.getElementById('wanderingAnswer').style.display='block'">👉 點我看答案</p>
+    <p class="tline" style="cursor:pointer;color:var(--qd-sea);font-weight:700; font-size:19px; margin-top:16px" onclick="this.style.display='none';document.getElementById('wanderingAnswer').style.display='block'">👉 點我看答案</p>
 
-    <div id="wanderingAnswer" style="display:none; text-align:center; margin-top:14px; padding-top:14px; border-top:2px dashed var(--gold)">
+    <div id="wanderingAnswer" style="display:none; text-align:center; margin-top:16px; padding-top:14px; border-top:2px dashed var(--gold)">
       <div class="poster" onclick="openLB('wandering',this)" style="max-width:220px; margin:0 auto 10px; cursor:pointer">
         <img src="assets/img_017.jpg" alt="wandering" style="border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.2)">
         <span class="pclick" style="position:relative; display:inline-block; margin-top:6px">🔍 點我看冷知識</span>
       </div>
       <h4 style="color:var(--qd-red); margin:8px 0 4px">🇨🇳 答案是《流浪地球》！</h4>
       <p>這是中國科幻電影的里程碑，<br>這些震撼場景幾乎全部在<span style="color:var(--qd-sea); font-weight:700">青島東方影都</span>攝影棚內拍攝！</p>
-      <p style="font-size:13px; color:#999; margin-top:6px">點擊上方海報，看看這部片背後的趣味冷知識 👆</p>
+      <p style="font-size:19px; color:#999; margin-top:6px">點擊上方海報，看看這部片背後的趣味冷知識 👆</p>
     </div>
   </div>
 
@@ -549,7 +549,7 @@
     <div><img class="pho" src="assets/img_015.jpg"><p class="cap">🎭 東方影都大劇院——「青島電影」的標誌建築</p></div>
     <div><img class="pho" src="assets/img_016.jpg"><p class="cap">🏝 星光島——影都所在地，充滿歐式風情的影視之島</p></div>
   </div>
-  <div class="grid g3" style="margin-top:20px">
+  <div class="grid g3" style="margin-top:24px">
     <div class="card"><div class="num">40+</div><p><b>座世界級攝影棚</b><br>最大單棚面積達 1 萬平方米，還有亞洲最大的水下製作中心。</p></div>
     <div class="card red"><div class="num">🌍</div><p><b>世界級大片取景地</b><br>《流浪地球》系列、《瘋狂的外星人》《獨行月球》《封神三部曲》《長城》等都曾在這裡拍攝。</p></div>
     <div class="card green"><div class="num">500億</div><p><b>投資規模（人民幣）</b><br>涵蓋影視拍攝、後期製作、主題樂園、酒店群，是「影視 + 旅遊」的超級綜合體。</p></div>
@@ -585,7 +585,7 @@
     </div>
   </div>
   <p class="footer-note">海報圖片僅作教學介紹用途，版權歸各電影出品方所有。</p>
-  <p style="margin-top:18px">💬 <em>互動提問：你看過《流浪地球》嗎？你知道那些震撼的太空場景，有些就是在青島的攝影棚裡拍出來的嗎？</em></p>
+  <p style="margin-top:24px">💬 <em>互動提問：你看過《流浪地球》嗎？你知道那些震撼的太空場景，有些就是在青島的攝影棚裡拍出來的嗎？</em></p>
 </section>
 
 
@@ -599,7 +599,7 @@
     <div><img class="pho" src="assets/img_023.jpg"><p class="cap">🍻 正宗青島啤酒：泡沫細膩、麥香清爽</p></div>
     <div><img class="pho" src="assets/img_024.jpg"><p class="cap">🏭 青島啤酒博物館——1903 年建成的百年老廠房</p></div>
   </div>
-  <div class="grid g2" style="margin-top:20px">
+  <div class="grid g2" style="margin-top:24px">
     <div class="card">
       <h3>🍻 青島啤酒小檔案</h3>
       <ul style="padding-left:20px">
@@ -621,29 +621,29 @@
   </div>
   <!-- 青岛美食与水果 -->
   <div style="margin-top:26px">
-    <h3 style="text-align:center;color:var(--qd-red);font-size:clamp(20px,2.5vw,26px);margin-bottom:16px">🦐 不只啤酒！青島還有這些好吃的</h3>
+    <h3 style="text-align:center;color:var(--qd-red);font-size:clamp(23px,2.8vw,30px);margin-bottom:16px">🦐 不只啤酒！青島還有這些好吃的</h3>
     <div class="grid g3">
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_038.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🌶️ 辣炒蛤蜊——青島「第一菜」，鮮辣入味配啤酒絕佳</p></div>
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_039.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🥟 鮁魚水餃 & 墨魚水餃——膠東非遺，「鮮從海上來」</p></div>
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_045.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🍖 青島鍋貼——外皮金黃酥脆，餡料鮮美多汁</p></div>
     </div>
-    <div class="grid g3" style="margin-top:14px">
+    <div class="grid g3" style="margin-top:16px">
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_046.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🐷 流亭豬蹄——百年非遺，醬香濃郁、軟糯入味</p></div>
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_047.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🦐 海鮮大排檔——青島夏夜最煙火氣的打開方式</p></div>
       <div><div style="aspect-ratio:4/3;overflow:hidden;border-radius:12px"><img class="pho" src="assets/img_048.jpg" style="height:100%;object-fit:cover"></div><p class="cap">🐚 蒜蓉粉絲扇貝——鮮甜彈牙，膠東海鮮代表作</p></div>
     </div>
-    <div class="grid g2" style="margin-top:18px">
+    <div class="grid g2" style="margin-top:24px">
       <div class="card green">
         <h3>🍽️ 膠東菜 & 海鮮</h3>
-        <p style="margin:0;font-size:14px;line-height:1.8">青島菜承襲魯菜特色，以海鮮為靈魂：<b>葱燒海參、油爆海螺、清蒸梭子蟹、蒜蓉粉絲扇貝</b>——濃油赤醬、鹹鮮入味。<br><br>街頭小吃同樣驚艷：<b>海菜涼粉、排骨米飯、青島大包、烤魷魚</b>……每到夏天，青島人拎着塑料袋裝啤酒、端着辣炒蛤蜊，這就是最具煙火氣的膠東生活！</p>
+        <p style="margin:0;font-size:23px;line-height:1.8">青島菜承襲魯菜特色，以海鮮為靈魂：<b>葱燒海參、油爆海螺、清蒸梭子蟹、蒜蓉粉絲扇貝</b>——濃油赤醬、鹹鮮入味。<br><br>街頭小吃同樣驚艷：<b>海菜涼粉、排骨米飯、青島大包、烤魷魚</b>……每到夏天，青島人拎着塑料袋裝啤酒、端着辣炒蛤蜊，這就是最具煙火氣的膠東生活！</p>
       </div>
       <div class="card">
         <h3>🍒 青島水果——北緯 36° 的甜蜜饋贈</h3>
         <div class="grid g2" style="margin-top:10px">
-          <div><img class="pho" src="assets/img_040.jpg" style="height:140px;object-fit:cover"><p class="cap" style="font-size:12px">北宅櫻桃——「中國櫻桃之鄉」</p></div>
-          <div><img class="pho" src="assets/img_049.jpg" style="height:140px;object-fit:cover"><p class="cap" style="font-size:12px">大澤山葡萄——「西有吐魯番，東有大澤山」</p></div>
+          <div><img class="pho" src="assets/img_040.jpg" style="height:140px;object-fit:cover"><p class="cap" style="font-size:23px">北宅櫻桃——「中國櫻桃之鄉」</p></div>
+          <div><img class="pho" src="assets/img_049.jpg" style="height:140px;object-fit:cover"><p class="cap" style="font-size:23px">大澤山葡萄——「西有吐魯番，東有大澤山」</p></div>
         </div>
-        <p style="margin:10px 0 0;font-size:13px;line-height:1.7"><b>青島地處北緯 36° 黃金緯度帶</b>，溫帶季風氣候、四季分明，山海交匯、土壤肥沃。<br><br>這裡孕育出<b>舊店蘋果、大澤山葡萄、祝溝草莓、即墨藍莓、寒露蜜桃</b>……每一口都是陽光、海風與山泉水共同釀造的甜蜜，是山海間最珍貴的糧食果蔬饋贈！</p>
+        <p style="margin:10px 0 0;font-size:19px;line-height:1.7"><b>青島地處北緯 36° 黃金緯度帶</b>，溫帶季風氣候、四季分明，山海交匯、土壤肥沃。<br><br>這裡孕育出<b>舊店蘋果、大澤山葡萄、祝溝草莓、即墨藍莓、寒露蜜桃</b>……每一口都是陽光、海風與山泉水共同釀造的甜蜜，是山海間最珍貴的糧食果蔬饋贈！</p>
       </div>
     </div>
   </div>
@@ -651,7 +651,7 @@
   <div class="beer-card"><div class="beer-in">
     <h3>🍺 Selina 老師啤酒卡</h3>
     <p class="beer-serial">— TSINGTAO BEER COUPON · 青島啤酒兌換券 —</p>
-    <p style="font-size:clamp(16px,2vw,20px);line-height:1.9">聽完工作坊還沒醉？那是因為你還沒去過青島！<br>
+    <p style="font-size:clamp(18px,2.2vw,23px);line-height:1.9">聽完工作坊還沒醉？那是因為你還沒去過青島！<br>
     將來殺到青島，出示此卡（截圖也算數）呼叫老師<br>
     WhatsApp：<b style="font-size:1.3em;color:var(--qd-sea);letter-spacing:2px">6568 9311</b><br>
     <b>老師二話不說，啤酒伺候——原漿安排上，泡沫管夠！</b></p>
@@ -667,8 +667,8 @@
   <!-- 獎品橫幅 -->
   <div style="text-align:center;margin:14px auto 22px;max-width:640px;padding:16px 24px;background:linear-gradient(135deg,#c2a878 0%,#e8d5a3 100%);border-radius:14px;box-shadow:0 4px 16px rgba(194,168,120,.35);position:relative;overflow:hidden">
     <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#fff,transparent);animation:shimmer 2s infinite"></div>
-    <p style="margin:0;font-size:22px;font-weight:800;color:#4a3f2a;letter-spacing:1px">🎁 前 6 名答對的同學有精美禮品！</p>
-    <p style="margin:6px 0 0;font-size:14px;color:#5c4f35">準備好了嗎？Ready, Go！</p>
+    <p style="margin:0;font-size:25px;font-weight:800;color:#4a3f2a;letter-spacing:1px">🎁 前 6 名答對的同學有精美禮品！</p>
+    <p style="margin:6px 0 0;font-size:23px;color:#5c4f35">準備好了嗎？Ready, Go！</p>
   </div>
 
   <div class="grid g2" style="max-width:900px;margin:0 auto;align-items:start">
@@ -677,12 +677,12 @@
       <h3 style="margin:0 0 14px;color:var(--qd-sea)">📱 掃碼加入 Wooclap</h3>
       <!-- 請將下方 src 替換為你的 Wooclap QR Code 圖片 -->
       <img id="wooclapQR" src="assets/img_001.png" style="width:220px;height:220px;object-fit:contain;border:3px dashed var(--qd-sea);border-radius:12px;padding:8px;background:#fff" alt="Wooclap QR Code">
-      <p style="margin:12px 0 6px;font-size:13px;color:#888">👆 請替換為你的 Wooclap 活動 QR Code</p>
-      <p style="margin:0;font-size:15px;color:var(--ink)">
+      <p style="margin:12px 0 6px;font-size:19px;color:#888">👆 請替換為你的 Wooclap 活動 QR Code</p>
+      <p style="margin:0;font-size:19px;color:var(--ink)">
         或瀏覽器輸入：<br>
-        <code id="wooclapLink" style="background:#f0f4f8;padding:4px 10px;border-radius:6px;font-size:14px;color:var(--qd-sea)">wooclap.com/YOURCODE</code>
+        <code id="wooclapLink" style="background:#f0f4f8;padding:4px 10px;border-radius:6px;font-size:23px;color:var(--qd-sea)">wooclap.com/YOURCODE</code>
       </p>
-      <p style="margin-top:14px;font-size:13px;color:#888;line-height:1.6">
+      <p style="margin-top:16px;font-size:19px;color:#888;line-height:1.6">
         💡 <b>使用方式</b>：<br>
         1. 打開 Wooclap 後台，啟動活動<br>
         2. 學生掃碼或輸入網址加入<br>
@@ -695,7 +695,7 @@
     <div>
       <div class="card" style="margin-bottom:18px">
         <h3 style="margin:0 0 10px">📝 本輪題目預覽（共 6 題）</h3>
-        <ol style="margin:0;padding-left:20px;font-size:14px;line-height:2;color:#555">
+        <ol style="margin:0;padding-left:20px;font-size:23px;line-height:2;color:#555">
           <li>青島在哪一年被德國租借？</li>
           <li>「紅瓦綠樹、碧海藍天」出自誰手？</li>
           <li>以下哪些是青島的城市名片？（多選）</li>
@@ -704,8 +704,8 @@
           <li>哪部電影主要在東方影都拍攝？</li>
         </ol>
       </div>
-      <div class="card green" style="text-align:center;padding:18px">
-        <p style="margin:0;font-size:15px;line-height:1.8">
+      <div class="card green" style="text-align:center;padding:20px">
+        <p style="margin:0;font-size:19px;line-height:1.8">
           🏆 <b>計分方式</b>：Wooclap 自動計分<br>
           ⏱ <b>限時</b>：每題 20 秒<br>
           🎯 <b>題型</b>：單選、多選、排序<br>
@@ -717,14 +717,14 @@
 
   <!-- 線上學生提示 -->
   <div id="studentHintFinal" style="display:none;text-align:center;margin:18px auto 0;max-width:560px;padding:14px;background:linear-gradient(135deg,#f0f4f8 0%,#e8f0e8 100%);border:2px solid var(--qd-green);border-radius:12px">
-    <p style="margin:0;font-size:15px;color:#555;line-height:1.7">
+    <p style="margin:0;font-size:19px;color:#555;line-height:1.7">
       📱 <b>線上同學</b>：請掃描上方 QR Code 或輸入網址加入 Wooclap 答題！<br>
       🎁 <b>注意</b>：前 6 名答對者有精美禮品！
     </p>
   </div>
 
   <!-- 老師操作提示 -->
-  <p style="text-align:center;margin-top:18px;font-size:13px;color:#aaa">
+  <p style="text-align:center;margin-top:24px;font-size:19px;color:#aaa">
     👩‍🏫 <b>老師操作</b>：在 Wooclap 後台啟動活動 → 學生掃碼加入 → 逐題發布 → 結束後點「下一部分 ▶」進入頒獎典禮
   </p>
 </section>
@@ -735,52 +735,52 @@
 
   <!-- 🏆 頒獎台 -->
   <h2>🏆 頒獎典禮</h2>
-  <p style="text-align:center;margin:0 auto 22px;font-size:16px;color:var(--qd-sea)">恭喜以下 6 位同學獲得精美禮品！</p>
+  <p style="text-align:center;margin:0 auto 22px;font-size:23px;color:var(--qd-sea)">恭喜以下 6 位同學獲得精美禮品！</p>
 
   <div style="max-width:800px;margin:0 auto">
     <!-- 前三名頒獎台 -->
     <div style="display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-bottom:28px;height:260px">
       <!-- 第二名 -->
       <div style="flex:1;max-width:200px;text-align:center">
-        <div class="winner-name" contenteditable="true" style="font-size:16px;font-weight:700;color:#888;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #ddd;padding:2px" data-placeholder="第2名">🥈 第2名</div>
+        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:700;color:#888;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #ddd;padding:2px" data-placeholder="第2名">🥈 第2名</div>
         <div style="height:140px;background:linear-gradient(180deg,#e8e8e8 0%,#c0c0c0 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
-          <span style="font-size:48px">🥈</span>
+          <span style="font-size:55px">🥈</span>
         </div>
       </div>
       <!-- 第一名 -->
       <div style="flex:1;max-width:220px;text-align:center;transform:scale(1.08)">
-        <div class="winner-name" contenteditable="true" style="font-size:18px;font-weight:800;color:var(--gold);margin-bottom:8px;min-height:28px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第1名">🥇 第1名</div>
+        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:800;color:var(--gold);margin-bottom:8px;min-height:28px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第1名">🥇 第1名</div>
         <div style="height:180px;background:linear-gradient(180deg,#fff8e7 0%,#c2a878 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(194,168,120,.4)">
-          <span style="font-size:64px">🥇</span>
+          <span style="font-size:74px">🥇</span>
         </div>
       </div>
       <!-- 第三名 -->
       <div style="flex:1;max-width:200px;text-align:center">
-        <div class="winner-name" contenteditable="true" style="font-size:16px;font-weight:700;color:#b08d55;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第3名">🥉 第3名</div>
+        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:700;color:#b08d55;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第3名">🥉 第3名</div>
         <div style="height:110px;background:linear-gradient(180deg,#f5e6d3 0%,#cd7f32 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
-          <span style="font-size:48px">🥉</span>
+          <span style="font-size:55px">🥉</span>
         </div>
       </div>
     </div>
 
     <!-- 第4-6名 -->
-    <div style="display:flex;justify-content:center;gap:16px;margin-bottom:32px">
+    <div style="display:flex;justify-content:center;gap:20px;margin-bottom:32px">
       <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
+        <div style="font-size:23px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
       </div>
       <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
+        <div style="font-size:23px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
       </div>
       <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:15px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
+        <div style="font-size:23px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
       </div>
     </div>
 
     <!-- 老師提示 -->
-    <p style="text-align:center;font-size:12px;color:#bbb;margin:0">
+    <p style="text-align:center;font-size:23px;color:#bbb;margin:0">
       👩‍🏫 老師提示：點擊上方名字可直接編輯（投屏時按「F11」全螢幕效果更佳）
     </p>
   </div>
@@ -801,14 +801,14 @@
 
   <!-- 感謝出席卡 -->
   <div style="max-width:700px;margin:30px auto 26px;background:#fff;border:3px solid var(--gold);border-radius:18px;padding:28px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.08)">
-    <p style="font-size:28px;margin:0 0 10px">🙏</p>
-    <h3 style="color:var(--qd-red);margin:0 0 8px;font-size:22px">衷心感謝您的出席</h3>
-    <p style="font-size:16px;color:#666;line-height:1.8;margin:0">
+    <p style="font-size:41px;margin:0 0 10px">🙏</p>
+    <h3 style="color:var(--qd-red);margin:0 0 8px;font-size:25px">衷心感謝您的出席</h3>
+    <p style="font-size:23px;color:#666;line-height:1.8;margin:0">
       無論您身在現場還是線上，<br>
       感謝您撥出寶貴時間參與這場「魅力青島」工作坊。<br>
       <b style="color:var(--qd-sea)">願您有一天親眼看到這片海，喝到老師請的那杯青島啤酒 🍺</b>
     </p>
-    <p style="font-size:13px;color:#999;margin-top:14px;letter-spacing:1px">— Selina 老師 · 魅力青島工作坊 —</p>
+    <p style="font-size:19px;color:#999;margin-top:16px;letter-spacing:1px">— Selina 老師 · 魅力青島工作坊 —</p>
   </div>
   <div style="max-width:820px;margin:26px auto 0">
     <video class="pho" autoplay muted loop playsinline style="width:100%;border-radius:14px;box-shadow:0 4px 14px rgba(90,90,90,.14)">
@@ -816,7 +816,7 @@
     </video>
     <p class="cap">🌅 送大家一片青島的「橘子海」——願你們有一天親眼看到這片海，也喝到老師請的那杯青島啤酒 🍺</p>
   </div>
-  <p style="text-align:center;margin-top:20px"><button class="btn ghost" onclick="restart()">🔁 重新開始工作坊</button></p>
+  <p style="text-align:center;margin-top:24px"><button class="btn ghost" onclick="restart()">🔁 重新開始工作坊</button></p>
   <p class="footer-note" style="text-align:center">資料來源：新華網、人民日報海外版、中國經濟網、青島市政府公開資料（2024–2025）。圖片僅作教學用途。</p>
 </section>
 
