@@ -111,6 +111,41 @@
   .beer-in h3{font-size:clamp(22px,3vw,30px);color:var(--qd-red);margin:0 0 2px}
   .beer-serial{font-size:13px;letter-spacing:3px;color:#999;margin-bottom:12px}
   .beer-foot{margin-top:12px;font-size:15px;font-weight:800;color:var(--qd-green);letter-spacing:1px}
+  /* 名人輪播 */
+  .carousel{position:relative;width:100%;max-width:720px;margin:18px auto;height:420px;overflow:hidden;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+  .carousel-slide{position:absolute;inset:0;opacity:0;transition:none;transform:scale(1.05)}
+  .carousel-slide img{width:100%;height:100%;object-fit:cover;display:block}
+  .carousel-caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;padding:40px 20px 18px;text-align:center;z-index:2}
+  .carousel-caption .c-name{font-size:32px;font-weight:800;margin-bottom:4px;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+  .carousel-caption .c-title{font-size:18px;color:#ffd76e;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+  @media(max-width:640px){.carousel{height:360px}.carousel-caption .c-name{font-size:26px}}
+
+  /* 冠軍輪播動畫（3人 × 2秒 = 6秒週期） */
+  .champ-carousel .slide-0{animation:champFade 6s infinite}
+  .champ-carousel .slide-1{animation:champFade 6s 2s infinite}
+  .champ-carousel .slide-2{animation:champFade 6s 4s infinite}
+  @keyframes champFade{
+    0%{opacity:1;transform:scale(1)}
+    28%{opacity:1;transform:scale(1)}
+    33%{opacity:0;transform:scale(1.05)}
+    95%{opacity:0;transform:scale(1.05)}
+    100%{opacity:1;transform:scale(1)}
+  }
+
+  /* 明星輪播動畫（6人 × 2秒 = 12秒週期） */
+  .star-carousel .slide-0{animation:starFade 12s infinite}
+  .star-carousel .slide-1{animation:starFade 12s 2s infinite}
+  .star-carousel .slide-2{animation:starFade 12s 4s infinite}
+  .star-carousel .slide-3{animation:starFade 12s 6s infinite}
+  .star-carousel .slide-4{animation:starFade 12s 8s infinite}
+  .star-carousel .slide-5{animation:starFade 12s 10s infinite}
+  @keyframes starFade{
+    0%{opacity:1;transform:scale(1)}
+    14%{opacity:1;transform:scale(1)}
+    16.7%{opacity:0;transform:scale(1.05)}
+    97.5%{opacity:0;transform:scale(1.05)}
+    100%{opacity:1;transform:scale(1)}
+  }
 </style>
 </head>
 <body>
@@ -386,6 +421,111 @@
       <div class="face back"><div class="backimgwrap" onclick="toggleGif(this,'大國重器下水地')"><img src="assets/img_014.jpg" style="object-position:center 40%"><span class="playbadge">▶ 動態</span></div><div class="backtxt"><h4>大國重器下水地</h4><p class="tline">國家級船舶與海工裝備出口基地，北海造船等骨幹船廠坐落於此。</p><p class="tline">超大型油輪（VLCC）、大型集裝箱船、海上鑽井平台（FPSO）從這裡下水。</p><p class="tline">產業規模位居中國前列——名副其實的「大國重器下水地」。</p><p style="text-align:center;margin-top:10px"><button class="btn ghost" style="font-size:14px;padding:8px 18px" onclick="event.stopPropagation();playCardAudio('assets/audio_006.mp3',this)">🔊 聽配音</button></p></div></div>
     </div></div><p class="hint">點擊翻面</p></div>
   </div>
+</section>
+
+<!-- ========== S5 青島還生產世界冠軍 ========== -->
+<section class="slide" id="s5">
+  <span class="tag">第四部分 · 40–42 分鐘</span>
+  <h2>🏆 青島還生產世界冠軍</h2>
+  <p class="lead">硬核製造之外，青島還走出了無數世界冠軍——他們在泳池裡、在球桌前，用汗水讓這座城市閃耀世界。</p>
+
+  <div class="carousel champ-carousel">
+    <div class="carousel-slide slide-0">
+      <img src="assets/img_052.jpg" alt="张展硕">
+      <div class="carousel-caption">
+        <div class="c-name">张展硕</div>
+        <div class="c-title">游泳世界冠军 · 史上最年轻</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-1">
+      <img src="assets/img_050.jpg" alt="陈梦">
+      <div class="carousel-caption">
+        <div class="c-name">陈梦</div>
+        <div class="c-title">乒乓球奥运冠军 · 东京双金</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-2">
+      <img src="assets/img_051.jpg" alt="张继科">
+      <div class="carousel-caption">
+        <div class="c-name">张继科</div>
+        <div class="c-title">乒乓球大满贯得主 · 445天最快纪录</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card red" style="text-align:center">
+      <p class="num">🏊</p>
+      <h3 style="margin-top:0">张展硕</h3>
+      <p style="font-size:14px">16 岁夺世锦赛双金，18 岁全运会四冠王，中国男子游泳史上最年轻的世界冠军。</p>
+    </div>
+    <div class="card red" style="text-align:center">
+      <p class="num">🏓</p>
+      <h3 style="margin-top:0">陈梦</h3>
+      <p style="font-size:14px">东京奥运会女单、女团双金得主，国际乒联总决赛四连冠，世界排名第一。</p>
+    </div>
+    <div class="card red" style="text-align:center">
+      <p class="num">🏓</p>
+      <h3 style="margin-top:0">张继科</h3>
+      <p style="font-size:14px">史上最快大满贯（445天），伦敦奥运会男单、男团双金，青岛走出的「藏獒」。</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:22px"><button class="btn ghost" onclick="go(1)">👉 不只冠军，还有明星</button></p>
+</section>
+
+<!-- ========== S5b 青島還生產明星 ========== -->
+<section class="slide" id="s5b">
+  <span class="tag">第四部分 · 42–44 分鐘</span>
+  <h2>🌟 這裡，既生產冠軍，也生產明星</h2>
+  <p class="lead">夢開始的地方，青島。從熒幕影帝到當紅偶像，這座城市走出了半個娛樂圈的頂流。</p>
+
+  <div class="carousel star-carousel">
+    <div class="carousel-slide slide-0">
+      <img src="assets/img_053.jpg" alt="黄晓明">
+      <div class="carousel-caption">
+        <div class="c-name">黄晓明</div>
+        <div class="c-title">演员 · 影帝 · 青岛</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-1">
+      <img src="assets/img_054.jpg" alt="黄渤">
+      <div class="carousel-caption">
+        <div class="c-name">黄渤</div>
+        <div class="c-title">演员 · 导演 · 金马影帝 · 青岛</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-2">
+      <img src="assets/img_055.jpg" alt="夏雨">
+      <div class="carousel-caption">
+        <div class="c-name">夏雨</div>
+        <div class="c-title">演员 · 威尼斯影帝 · 青岛</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-3">
+      <img src="assets/img_056.jpg" alt="倪萍">
+      <div class="carousel-caption">
+        <div class="c-name">倪萍</div>
+        <div class="c-title">主持人 · 演员 · 央视一姐 · 青岛</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-4">
+      <img src="assets/img_057.jpg" alt="任嘉伦">
+      <div class="carousel-caption">
+        <div class="c-name">任嘉伦</div>
+        <div class="c-title">演员 · 歌手 · 青岛</div>
+      </div>
+    </div>
+    <div class="carousel-slide slide-5">
+      <img src="assets/img_058.jpg" alt="黄子韬">
+      <div class="carousel-caption">
+        <div class="c-name">黄子韬</div>
+        <div class="c-title">歌手 · 演员 · 青岛</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:22px;font-size:clamp(18px,2.5vw,26px);color:var(--qd-red);font-weight:800">✨ 夢開始的地方，青島 ✨</p>
+  <p style="text-align:center;margin-top:18px"><button class="btn ghost" onclick="go(1)">👉 走進東方影都</button></p>
 </section>
 
 <!-- ========== S6 東方影都 ========== -->
