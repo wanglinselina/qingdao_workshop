@@ -150,13 +150,6 @@
     0%{transform:translateX(-100%)}
     100%{transform:translateX(100%)}
   }
-  /* 封面高清圖片 Ken Burns 效果 */
-  .cover-hero{position:relative;width:100%;height:62vh;overflow:hidden;border-radius:16px}
-  .cover-hero img{width:100%;height:100%;object-fit:cover;display:block;animation:kenBurns 20s ease-in-out infinite alternate}
-  @keyframes kenBurns{
-    0%{transform:scale(1) translate(0,0)}
-    100%{transform:scale(1.08) translate(-1%,-1%)}
-  }
 </style>
 </head>
 <body>
@@ -171,9 +164,9 @@
 <!-- ========== S0 神秘封面 ========== -->
 <section class="slide active" id="s0">
   <div style="position:relative; width:100%; max-height:62vh; overflow:hidden; border-radius:16px; margin-bottom:20px">
-    <div class="cover-hero">
-      <img src="assets/img_cover_hd.jpg" alt="青島紅瓦綠樹碧海藍天">
-    </div>
+    <video autoplay muted loop playsinline style="width:100%; display:block; border-radius:16px; object-fit:cover; max-height:62vh">
+      <source src="assets/vid_cover_hd.mp4" type="video/mp4">
+    </video>
     <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.35)">
       <div style="text-align:center; color:#fff; padding:20px">
         <p style="font-size:23px; letter-spacing:4px; opacity:.85; margin-bottom:12px">● INTERACTIVE WORKSHOP ●</p>
@@ -674,7 +667,7 @@
   <!-- 獎品橫幅 -->
   <div style="text-align:center;margin:14px auto 22px;max-width:640px;padding:16px 24px;background:linear-gradient(135deg,#c2a878 0%,#e8d5a3 100%);border-radius:14px;box-shadow:0 4px 16px rgba(194,168,120,.35);position:relative;overflow:hidden">
     <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#fff,transparent);animation:shimmer 2s infinite"></div>
-    <p style="margin:0;font-size:25px;font-weight:800;color:#4a3f2a;letter-spacing:1px">🎁 前 6 名答對的同學有精美禮品！</p>
+    <p style="margin:0;font-size:25px;font-weight:800;color:#4a3f2a;letter-spacing:1px">🎁 前 10 名答對的同學有精美紀念品！</p>
     <p style="margin:6px 0 0;font-size:23px;color:#5c4f35">準備好了嗎？Ready, Go！</p>
   </div>
 
@@ -682,13 +675,8 @@
     <!-- 左側：QR Code 區 -->
     <div class="card" style="text-align:center;padding:28px">
       <h3 style="margin:0 0 14px;color:var(--qd-sea)">📱 掃碼加入 Wooclap</h3>
-      <!-- 請將下方 src 替換為你的 Wooclap QR Code 圖片 -->
-      <img id="wooclapQR" src="assets/img_001.png" style="width:220px;height:220px;object-fit:contain;border:3px dashed var(--qd-sea);border-radius:12px;padding:8px;background:#fff" alt="Wooclap QR Code">
-      <p style="margin:12px 0 6px;font-size:19px;color:#888">👆 請替換為你的 Wooclap 活動 QR Code</p>
-      <p style="margin:0;font-size:19px;color:var(--ink)">
-        或瀏覽器輸入：<br>
-        <code id="wooclapLink" style="background:#f0f4f8;padding:4px 10px;border-radius:6px;font-size:23px;color:var(--qd-sea)">wooclap.com/YOURCODE</code>
-      </p>
+      <img id="wooclapQR" src="assets/wooclap_qr.png" style="width:220px;height:220px;object-fit:contain;border:3px dashed var(--qd-sea);border-radius:12px;padding:8px;background:#fff" alt="Wooclap QR Code">
+      <p style="margin:12px 0 6px;font-size:19px;color:#888">👆 掃描上方 QR Code 加入活動</p>
       <p style="margin-top:16px;font-size:19px;color:#888;line-height:1.6">
         💡 <b>使用方式</b>：<br>
         1. 打開 Wooclap 後台，啟動活動<br>
@@ -698,25 +686,24 @@
       </p>
     </div>
 
-    <!-- 右側：題目預覽 & 說明 -->
+    <!-- 右側：活動說明 -->
     <div>
       <div class="card" style="margin-bottom:18px">
-        <h3 style="margin:0 0 10px">📝 本輪題目預覽（共 6 題）</h3>
-        <ol style="margin:0;padding-left:20px;font-size:23px;line-height:2;color:#555">
-          <li>青島在哪一年被德國租借？</li>
-          <li>「紅瓦綠樹、碧海藍天」出自誰手？</li>
-          <li>以下哪些是青島的城市名片？（多選）</li>
-          <li>陳夢在巴黎奧運衛冕哪兩項金牌？</li>
-          <li>青島歷史事件排序題</li>
-          <li>哪部電影主要在東方影都拍攝？</li>
-        </ol>
+        <h3 style="margin:0 0 10px">🎮 活動說明</h3>
+        <ul style="margin:0;padding-left:20px;font-size:19px;line-height:2;color:#555">
+          <li>共 6 題，涵蓋歷史、文化、體育、影視</li>
+          <li>每題限時 20 秒，手機上直接作答</li>
+          <li>單選、多選、排序題型混合</li>
+          <li>系統自動計分，即時顯示排行榜</li>
+          <li>可設定小組競賽模式，增加互動</li>
+        </ul>
       </div>
       <div class="card green" style="text-align:center;padding:20px">
         <p style="margin:0;font-size:19px;line-height:1.8">
           🏆 <b>計分方式</b>：Wooclap 自動計分<br>
           ⏱ <b>限時</b>：每題 20 秒<br>
           🎯 <b>題型</b>：單選、多選、排序<br>
-          <span style="color:var(--qd-red);font-weight:700">前 6 名可獲精美禮品！</span>
+          <span style="color:var(--qd-red);font-weight:700">前 10 名可獲精美紀念品！</span>
         </p>
       </div>
     </div>
@@ -725,8 +712,8 @@
   <!-- 線上學生提示 -->
   <div id="studentHintFinal" style="display:none;text-align:center;margin:18px auto 0;max-width:560px;padding:14px;background:linear-gradient(135deg,#f0f4f8 0%,#e8f0e8 100%);border:2px solid var(--qd-green);border-radius:12px">
     <p style="margin:0;font-size:19px;color:#555;line-height:1.7">
-      📱 <b>線上同學</b>：請掃描上方 QR Code 或輸入網址加入 Wooclap 答題！<br>
-      🎁 <b>注意</b>：前 6 名答對者有精美禮品！
+      📱 <b>線上同學</b>：請掃描上方 QR Code 加入 Wooclap 答題！<br>
+      🎁 <b>注意</b>：前 10 名答對者有精美紀念品！
     </p>
   </div>
 
@@ -742,9 +729,9 @@
 
   <!-- 🏆 頒獎台 -->
   <h2>🏆 頒獎典禮</h2>
-  <p style="text-align:center;margin:0 auto 22px;font-size:23px;color:var(--qd-sea)">恭喜以下 6 位同學獲得精美禮品！</p>
+  <p style="text-align:center;margin:0 auto 22px;font-size:23px;color:var(--qd-sea)">恭喜以下 10 位同學獲得精美紀念品！</p>
 
-  <div style="max-width:800px;margin:0 auto">
+  <div style="max-width:900px;margin:0 auto">
     <!-- 前三名頒獎台 -->
     <div style="display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-bottom:28px;height:260px">
       <!-- 第二名 -->
@@ -770,24 +757,42 @@
       </div>
     </div>
 
-    <!-- 第4-6名 -->
-    <div style="display:flex;justify-content:center;gap:20px;margin-bottom:32px">
-      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:23px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
+    <!-- 第4-10名 -->
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;max-width:800px;margin-left:auto;margin-right:auto">
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
       </div>
-      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:23px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
       </div>
-      <div style="text-align:center;padding:12px 20px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;min-width:140px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:23px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:19px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
+      </div>
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第7名">第7名</div>
+      </div>
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第8名">第8名</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:32px;max-width:320px;margin-left:auto;margin-right:auto">
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;flex:1;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第9名">第9名</div>
+      </div>
+      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;flex:1;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+        <div style="font-size:20px;margin-bottom:4px">🏅</div>
+        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第10名">第10名</div>
       </div>
     </div>
 
     <!-- 老師提示 -->
-    <p style="text-align:center;font-size:23px;color:#bbb;margin:0">
+    <p style="text-align:center;font-size:19px;color:#bbb;margin:0">
       👩‍🏫 老師提示：點擊上方名字可直接編輯（投屏時按「F11」全螢幕效果更佳）
     </p>
   </div>
