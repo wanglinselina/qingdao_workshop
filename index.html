@@ -224,7 +224,7 @@
     <p style="font-size:19px;color:#777;margin-bottom:12px">請學生拿出手機，掃描下方 QR Code<br>即可進入「青島猜猜看」答題頁面</p>
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeAQAAAAB6HIMaAAAB20lEQVR4nO2YPY4bMQyFP5kDpNQAOUCOQt/MV6OP4gME4JQGZLwU0uw22d0qCItVMRiAzQfq6fGniQ/P6/JxDL6DXwVRAli6FEqnx+gz3z4q0rokSyyRwhSjyyRlQdoNaDhdEK+f+dyTx5Vjt98FlXAGj9Z2fuTdkvYrCgB9Guwx4Nlur/2ux7UA0N/P0q0ESAFu6VV1e4F7a43jaunbcbMEeLXW9pK5nSedLiXLECRJ9XLL9Fh6LB9bDhajpt9OiXbRJQnmf1hF3SJpAIs2LH3AgKK5TUbX6DFv39LBpzBq0s6UmjR60GXJmDmvSOvAammAHkroQa9JO5sZcfZjWpWiJK3EfFM4uJIB9LCatDmBfRYFgB6WFKVVmELpY1pBMnBLSvYJKFFiCfjAlT7/S76yC/iGP3cAy/sGTBP+f0CfHCkA8LHkGgNfRa0gbbot0a66QD+VXJD2HCHH6b0DTFF05n27es2mcRpv2a7GTTFHBuB9mVCTds0OSwN0DXyWjHq0F47WWtvwjaXeDTb8tZd0sLWr8ffRDFdS9JWlg5tWNz4XC1Vr2UmbrFZcomv0mn77FnR73IBxNHtcN6BHXd1K49wnAOAlc/u2v13ftU+YY1o52va9yf9nwT8CBrSMdmvbFQAAAABJRU5ErkJggg==" style="width:200px;height:200px;display:block;margin:0 auto;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.15)">
     <p style="font-size:23px;color:#999;margin-top:10px;word-break:break-all">https://wanglinselina.github.io/qingdao_workshop/?mode=student</p>
-    <p style="font-size:19px;color:var(--qd-red);margin-top:8px;background:#fff3f0;padding:6px 10px;border-radius:6px;display:inline-block"><b>⚠️ 部署後請修改為你的實際網址</b></p>
+    <p style="font-size:19px;color:var(--qd-red);margin-top:8px;background:#fff3f0;padding:6px 10px;border-radius:6px></p>
   </div>
 
   <!-- 學生模式提示（僅學生可見） -->
@@ -676,14 +676,7 @@
     <div class="card" style="text-align:center;padding:28px">
       <h3 style="margin:0 0 14px;color:var(--qd-sea)">📱 掃碼加入 Wooclap</h3>
       <img id="wooclapQR" src="assets/wooclap_qr.png" style="width:220px;height:220px;object-fit:contain;border:3px dashed var(--qd-sea);border-radius:12px;padding:8px;background:#fff" alt="Wooclap QR Code">
-      <p style="margin:12px 0 6px;font-size:19px;color:#888">👆 掃描上方 QR Code 加入活動</p>
-      <p style="margin-top:16px;font-size:19px;color:#888;line-height:1.6">
-        💡 <b>使用方式</b>：<br>
-        1. 打開 Wooclap 後台，啟動活動<br>
-        2. 學生掃碼或輸入網址加入<br>
-        3. 老師控制題目 pace，學生手機答題<br>
-        4. 結束後 Wooclap 自動顯示排行榜
-      </p>
+      <p style="margin-top:16px;font-size:19px;color:#888;line-height:1.6">💡 打開 Wooclap 後台啟動活動，學生掃碼加入，手機上直接作答。</p>
     </div>
 
     <!-- 右側：活動說明 -->
@@ -717,84 +710,27 @@
     </p>
   </div>
 
-  <!-- 老師操作提示 -->
-  <p style="text-align:center;margin-top:24px;font-size:19px;color:#aaa">
-    👩‍🏫 <b>老師操作</b>：在 Wooclap 後台啟動活動 → 學生掃碼加入 → 逐題發布 → 結束後點「下一部分 ▶」進入頒獎典禮
-  </p>
+  <p style="text-align:center;margin-top:24px;font-size:19px;color:#aaa">結束後點「下一部分 ▶」進入頒獎典禮</p>
 </section>
 
 <!-- ========== S9 頒獎典禮 + 結語 ========== -->
 <section class="slide" id="s9">
   <span class="tag">頒獎典禮 · 結語</span>
 
-  <!-- 🏆 頒獎台 -->
+  <!-- 🏆 Wooclap 排行榜 -->
   <h2>🏆 頒獎典禮</h2>
-  <p style="text-align:center;margin:0 auto 22px;font-size:23px;color:var(--qd-sea)">恭喜以下 10 位同學獲得精美紀念品！</p>
+  <p style="text-align:center;margin:0 auto 22px;font-size:23px;color:var(--qd-sea)">恭喜以下同學獲得精美紀念品！</p>
 
-  <div style="max-width:900px;margin:0 auto">
-    <!-- 前三名頒獎台 -->
-    <div style="display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-bottom:28px;height:260px">
-      <!-- 第二名 -->
-      <div style="flex:1;max-width:200px;text-align:center">
-        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:700;color:#888;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #ddd;padding:2px" data-placeholder="第2名">🥈 第2名</div>
-        <div style="height:140px;background:linear-gradient(180deg,#e8e8e8 0%,#c0c0c0 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
-          <span style="font-size:55px">🥈</span>
-        </div>
-      </div>
-      <!-- 第一名 -->
-      <div style="flex:1;max-width:220px;text-align:center;transform:scale(1.08)">
-        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:800;color:var(--gold);margin-bottom:8px;min-height:28px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第1名">🥇 第1名</div>
-        <div style="height:180px;background:linear-gradient(180deg,#fff8e7 0%,#c2a878 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(194,168,120,.4)">
-          <span style="font-size:74px">🥇</span>
-        </div>
-      </div>
-      <!-- 第三名 -->
-      <div style="flex:1;max-width:200px;text-align:center">
-        <div class="winner-name" contenteditable="true" style="font-size:23px;font-weight:700;color:#b08d55;margin-bottom:8px;min-height:24px;outline:none;border-bottom:2px dashed #e8d5a3;padding:2px" data-placeholder="第3名">🥉 第3名</div>
-        <div style="height:110px;background:linear-gradient(180deg,#f5e6d3 0%,#cd7f32 100%);border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.12)">
-          <span style="font-size:55px">🥉</span>
-        </div>
-      </div>
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <div id="wooclapLeaderboard" style="display:none;width:100%;height:70vh;border:3px solid var(--gold);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(0,0,0,.12)">
+      <iframe id="wooclapFrame" src="" style="width:100%;height:100%;border:none" allow="fullscreen"></iframe>
     </div>
-
-    <!-- 第4-10名 -->
-    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:24px;max-width:800px;margin-left:auto;margin-right:auto">
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第4名">第4名</div>
-      </div>
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第5名">第5名</div>
-      </div>
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第6名">第6名</div>
-      </div>
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第7名">第7名</div>
-      </div>
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第8名">第8名</div>
-      </div>
-    </div>
-    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:32px;max-width:320px;margin-left:auto;margin-right:auto">
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;flex:1;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第9名">第9名</div>
-      </div>
-      <div style="text-align:center;padding:10px 8px;background:#fff;border:2px solid #e0e0e0;border-radius:12px;flex:1;box-shadow:0 2px 8px rgba(0,0,0,.06)">
-        <div style="font-size:20px;margin-bottom:4px">🏅</div>
-        <div class="winner-name" contenteditable="true" style="font-size:17px;font-weight:600;color:#555;outline:none;border-bottom:1px dashed #ccc;padding:2px" data-placeholder="第10名">第10名</div>
-      </div>
-    </div>
-
-    <!-- 老師提示 -->
-    <p style="text-align:center;font-size:19px;color:#bbb;margin:0">
-      👩‍🏫 老師提示：點擊上方名字可直接編輯（投屏時按「F11」全螢幕效果更佳）
-    </p>
+    <button class="btn" id="showLB" onclick="toggleLeaderboard()" style="font-size:23px;padding:16px 48px;margin:10px auto">
+      🏅 顯示 Wooclap 排行榜
+    </button>
+    <button class="btn ghost" id="hideLB" onclick="toggleLeaderboard()" style="display:none;font-size:19px;padding:12px 32px;margin:10px auto">
+      ✕ 關閉排行榜
+    </button>
   </div>
 
   <hr style="border:none;border-top:2px dashed #ddd;margin:32px auto;max-width:600px">
@@ -1036,8 +972,24 @@ function nextQuiz(){
   }
 }
 
-/* ===== 終極問答（已改為 Wooclap，此處保留佔位） ===== */
-/* 題目現在在 Wooclap 平台進行，學生掃碼加入 */
+/* ===== Wooclap 排行榜 ===== */
+function toggleLeaderboard(){
+  const box=document.getElementById('wooclapLeaderboard');
+  const showBtn=document.getElementById('showLB');
+  const hideBtn=document.getElementById('hideLB');
+  const frame=document.getElementById('wooclapFrame');
+  if(box.style.display==='none'||!box.style.display){
+    frame.src='https://app.wooclap.com/events/LKEKTOG/live-session';
+    box.style.display='block';
+    showBtn.style.display='none';
+    hideBtn.style.display='inline-block';
+  }else{
+    box.style.display='none';
+    frame.src='';
+    showBtn.style.display='inline-block';
+    hideBtn.style.display='none';
+  }
+}
 
 function restart(){
   qi=0;score=0;document.getElementById('score').textContent=0;
